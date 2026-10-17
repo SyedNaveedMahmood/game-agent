@@ -15,7 +15,10 @@
   "raw_evidence_archive_bytes": 232455203,
   "github_limit_bytes": 104857600,
   "raw_archive_excluded_from_repo": true,
-  "package_checksums": 512,
-  "checksummed_files": 512,
-  "checksummed_bytes": 34949626
+  "package_checksums": 514,
+  "checksummed_files": 514,
+  "checksummed_bytes": 61702707,
+  "previous_pilot_bundle": "results/historical/QWEN38_VIABILITY_EXPERIMENT.zip",
+  "previous_pilot_bundle_sha256": "8ba9a4cef2d1a5f2b1e1c81c2931a22aee9008d16d0d80b3f16494383834c263",
+  "previous_pilot_bundle_bytes": 26752786
 }

@@ -8,6 +8,8 @@ The user requested an immediate pause during longitudinal environment seed `2026
 
 The compact result set includes the main report, 29 per-round result files, the round-30 before-state/RNG and partial decision ledgers, metrics, audits, regression log, and blinded pass-one/pass-two human-review CSVs. The unblinding key is intentionally not in this GitHub folder.
 
+The earlier pre-remediation pilot archive is preserved separately at results/historical/QWEN38_VIABILITY_EXPERIMENT.zip. It is historical evidence and is not pooled with the corrected v2 results.
+
 ## Full raw evidence
 
 All raw prompts, responses, checkpoints, telemetry, logs, and historical evidence are in `QWEN38_REMEDIATION_V2_EVIDENCE_PAUSED_20261017.zip`, delivered separately because its 232,455,203-byte size exceeds GitHub's single-file upload limit. Its SHA-256 is recorded in `results/archive_manifest_paused_20261017.json` and the accompanying `.sha256` file. The archive contains the directory `qwen38_remediation_v2_20261016/`; extract its contents into the `data/` directory of the source snapshot to restore its expected location.
