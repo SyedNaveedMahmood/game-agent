@@ -1,0 +1,47 @@
+# Hunting Strategies
+This simulation focuses on hunting dynamics and resource gathering strategies.
+
+## Core Resource Strategies
+1. **Resource Prioritization**:
+   * **Hunting vs. Gathering**: Meat provides 20 HP per unit while plants provide 10 HP per unit. Prioritize hunting when safe to do so.
+   * **Risk Assessment**: Balance the higher nutritional value of meat against the risk of taking damage from failed hunts.
+
+2. **Hunting Tactics**:
+   * **Target Selection**: Choose prey that are isolated from other agents who might compete for the same resource.
+   * **Health Management**: Maintain sufficient HP before hunting (at least 5 HP) to absorb potential damage from failed hunts.
+   * **Cooperative Hunting**: Consider coordinating with other agents to more efficiently hunt prey.
+
+3. **Resource Conservation**:
+   * **Strategic Consumption**: Consume resources only when necessary to optimize HP for reproduction.
+   * **Inventory Management**: Balance between plant and meat resources for different situations.
+
+## Survival Strategies
+1. **Energy Efficiency**:
+   * **Movement Planning**: Plot efficient paths to resources and targets of interest.
+   * **Action Economy**: Prioritize actions that give the most value per turn.
+
+2. **Defensive Tactics**:
+   * **Escape Routes**: Always have a planned escape route when hunting or engaging with potentially hostile agents.
+   * **Safe Zones**: Identify areas with abundant resources and minimal competition.
+
+3. **Reproductive Strategy**:
+   * **Resource Stockpiling**: Gather sufficient resources to maintain HP above 36 for reproduction.
+   * **Timing**: Reproduce as soon as requirements are met (HP ≥ 36, Age > 4).
+
+## Social Strategies
+1. **Cooperative Behavior**:
+   * **Resource Sharing**: Share surplus resources with allies, especially those with low HP.
+   * **Information Exchange**: Communicate locations of prey animals to coordinate hunting.
+
+2. **Competitive Behavior**:
+   * **Resource Competition**: Anticipate and outmaneuver other agents to reach valuable prey first.
+   * **Territorial Control**: Establish presence in resource-rich areas to deter competitors.
+
+## Environmental Adaptation
+1. **Resource Distribution**:
+   * **Hotspot Identification**: Identify areas with high concentrations of prey.
+   * **Prey Patterns**: Learn movement patterns of prey to predict future locations.
+
+2. **Time Management**:
+   * **Short-Term Planning**: In this 10-step simulation, every action must contribute toward immediate survival and reproduction.
+   * **Action Prioritization**: Focus on high-value actions that maximize resource acquisition or reproduction potential.

@@ -1,0 +1,5 @@
+# Pending independent human review
+
+No ratings have been assigned. Use at least two independent raters. Keep the unblinding key from raters until their first-pass profile guesses and factual notes are sealed. First read pass1_behavior_only.csv, which omits thinking and the assigned focal profile. Use the frozen report rubric; distinguish delivered HP, harm, communication, and justified deferral. Single decisions may be ambiguous. Next inspect pass2_reasoning.csv alongside the same history, make factual annotations, then reveal the key for profile-compatibility ratings (0 contradiction, 1 ambiguous/partial, 2 consistent). Resolve disagreements explicitly.
+
+Blinding remains imperfect: identities, known partner profiles, family inheritance, and natural-language self-descriptions can reveal the focal profile. The second pass exposes more such information. Do not present these as the paper's behavior-only run-level confusion-matrix scores. The evaluated Qwen model must not judge its own output.

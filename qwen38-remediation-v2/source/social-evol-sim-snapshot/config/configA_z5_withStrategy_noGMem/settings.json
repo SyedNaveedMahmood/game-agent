@@ -1,0 +1,79 @@
+{
+  "simulation": {
+    "name": "SiliconFlowAPITest",
+    "version": "1.0",
+    "description": "Test the coordination of group defense strategies"
+  },
+
+  "world": {
+    "width": 16,
+    "height": 16,
+    "max_life_steps": 60
+  },
+
+  "agent": {
+    "initial_count": 6,
+    "ratio": {
+      "moral": 0.5,
+      "immoral": 0.5
+    },
+
+    "hp": {
+      "initial": 20,
+      "max": 30
+    },
+
+    "age": {
+      "initial": 10,
+      "max": 40
+    },
+
+    "inventory": {
+      "max_size": 10,
+      "initial": {
+        "meat": 1,
+        "plant": 1
+      }
+    },
+
+    "reproduction": {
+      "min_hp": 16,
+      "hp_cost": 15,
+      "min_age": 4,
+      "offspring_initial_hp": 3
+    },
+
+    "attack": {
+      "power": {
+        "mean": 5,
+        "sd": 2.5
+      }
+    },
+
+    "max_collect_quantity": 3
+  },
+
+  "resource": {
+    "plant": {
+      "initial_quantity": 3,
+      "capacity": 5,
+      "respawn_delay": 10,
+      "nutrition": 3
+    },
+    "prey": {
+      "initial_quantity": 3,
+      "hp": 20,
+      "attack": 3,
+      "respawn_rate": 0.05,
+      "meat_unit_hp": 3,
+      "nutrition": 3
+    }
+  },
+
+
+  "llm": {
+    "provider": "tongyuan",
+    "chat_model": "o4-mini-2025-04-16",
+    "max_retries": 2
+  }
+}

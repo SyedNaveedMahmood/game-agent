@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-17T10:18:09.350418+00:00",
+  "destination_repository": "https://github.com/SyedNaveedMahmood/game-agent",
+  "destination_base_commit": "8af7c60078e21b9b0674e37c71e96b50c38661e5",
+  "source_repository": "https://github.com/MoralAgentSim/social-evol-sim",
+  "source_base_commit": "4863257c941c17ecf7556a1b2947c91400df8a47",
+  "longitudinal_seed": "20261017",
+  "committed_rounds": 29,
+  "planned_rounds": 30,
+  "round_30_committed": false,
+  "other_longitudinal_seeds_started": false,
+  "pytest": "119 passed, 2 warnings",
+  "raw_evidence_archive": "QWEN38_REMEDIATION_V2_EVIDENCE_PAUSED_20261017.zip",
+  "raw_evidence_archive_sha256": "5ea7f8d4e5035438f23c305e9d6d3f3a10e7fa0e6a13e66a029dc8d2da1b9955",
+  "raw_evidence_archive_bytes": 232455203,
+  "github_limit_bytes": 104857600,
+  "raw_archive_excluded_from_repo": true,
+  "package_checksums": 512,
+  "checksummed_files": 512,
+  "checksummed_bytes": 34949626
+}

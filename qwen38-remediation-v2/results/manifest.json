@@ -1,0 +1,1576 @@
+{
+  "frozen_at": "2026-10-16T06:13:24Z",
+  "base_git_revision": "4863257c941c17ecf7556a1b2947c91400df8a47",
+  "canonical_config": "configZ_major_v2",
+  "prompt_hashes": {
+    "scr\\simulation\\agent_decision\\async_response_processor.py": "08f723201cdd28ee588f5603eaef24b7ab9b7db88b74131258180385c6a75eb6",
+    "config\\configZ_major_v2\\settings.json": "2934c7027c742fa86f02b5ffa3e38cd677a2871d32c293885b6ca482f8278fb4",
+    "config\\configZ_major_v2\\prompts\\rules.txt": "6f783999985f81cfc90c5f6361f7b0c979f80c5f6df037bb1666f0ac4c2c0549",
+    "config\\configZ_major_v2\\prompts\\strategies.txt": "ad762d1240d74b910b8866433d87f77afb53aad82777d37231fb0b4579eea9b4",
+    "config\\configZ_major_v2\\prompts\\morality\\immoral.txt": "7869ad3682a6595217dc23b865c6b2ae158ed82ac3cfe683e2b10ea910526678",
+    "config\\configZ_major_v2\\prompts\\morality\\kin_focused_moral.txt": "17f2ee300b0cffef6fd05290ed53fecfed1e468994586fc78c5be0bcf5a799af",
+    "config\\configZ_major_v2\\prompts\\morality\\moral.txt": "009af63b55094f7c170a84ae6ae581f990a1658a79ae816a7b5de2c9755e23aa",
+    "config\\configZ_major_v2\\prompts\\morality\\reciprocal_group_focused_moral.txt": "3c7729f667c2594ccced603d58cdda015d0ff8aecbdadef76569c1805c96402d",
+    "config\\configZ_major_v2\\prompts\\morality\\reproduction_averse_selfish.txt": "15f7f6c6fef8b99fcd814b4fa0bd375c9922e83b69e602a831662a185e9b9d63",
+    "config\\configZ_major_v2\\prompts\\morality\\reproductive_selfish.txt": "1521f442979a71d0ffc1a29182969fcdbc2d80362b18c47e9b238c41ff0b0602",
+    "config\\configZ_major_v2\\prompts\\morality\\universal_group_focused_moral.txt": "3fa093f7d06208ef8a0b272df99a7e945b6ac53eb291f697675724911c5072c1"
+  },
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 8192,
+    "extra_body": {
+      "top_k": 20,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0
+    }
+  },
+  "inventory": [
+    {
+      "experiment": "A",
+      "case_id": "infant__universal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__universal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "infant",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__universal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "infant",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__universal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "infant",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__universal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "infant",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reciprocal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reciprocal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "infant",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reciprocal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "infant",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reciprocal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "infant",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reciprocal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "infant",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__kin_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__kin_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "infant",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__kin_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "infant",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__kin_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "infant",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__kin_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "infant",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reproductive_selfish__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reproductive_selfish__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "infant",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reproductive_selfish__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "infant",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reproductive_selfish__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "infant",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "infant__reproductive_selfish__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "infant",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__universal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "adult_offspring",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__universal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "adult_offspring",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__universal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "adult_offspring",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__universal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "adult_offspring",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__universal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "adult_offspring",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reciprocal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "adult_offspring",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reciprocal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "adult_offspring",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reciprocal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "adult_offspring",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reciprocal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "adult_offspring",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reciprocal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "adult_offspring",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__kin_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "adult_offspring",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__kin_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "adult_offspring",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__kin_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "adult_offspring",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__kin_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "adult_offspring",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__kin_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "adult_offspring",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reproductive_selfish__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "adult_offspring",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reproductive_selfish__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "adult_offspring",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reproductive_selfish__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "adult_offspring",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reproductive_selfish__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "adult_offspring",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "adult_offspring__reproductive_selfish__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "adult_offspring",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__universal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__universal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "stranger",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__universal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "stranger",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__universal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "stranger",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__universal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "stranger",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reciprocal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reciprocal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "stranger",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reciprocal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "stranger",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reciprocal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "stranger",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reciprocal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "stranger",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__kin_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__kin_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "stranger",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__kin_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "stranger",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__kin_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "stranger",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__kin_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "stranger",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reproductive_selfish__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reproductive_selfish__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "stranger",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reproductive_selfish__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "stranger",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reproductive_selfish__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "stranger",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "stranger__reproductive_selfish__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "stranger",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__universal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__universal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "cooperator",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__universal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "cooperator",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__universal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "cooperator",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__universal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "cooperator",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reciprocal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reciprocal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "cooperator",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reciprocal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "cooperator",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reciprocal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "cooperator",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reciprocal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "cooperator",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__kin_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__kin_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "cooperator",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__kin_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "cooperator",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__kin_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "cooperator",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__kin_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "cooperator",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reproductive_selfish__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reproductive_selfish__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "cooperator",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reproductive_selfish__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "cooperator",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reproductive_selfish__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "cooperator",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "cooperator__reproductive_selfish__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "cooperator",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__universal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__universal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "unfair_partner",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__universal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "unfair_partner",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__universal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "unfair_partner",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__universal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "unfair_partner",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reciprocal_group_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reciprocal_group_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "unfair_partner",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reciprocal_group_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "unfair_partner",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reciprocal_group_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "unfair_partner",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reciprocal_group_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "unfair_partner",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__kin_focused_moral__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__kin_focused_moral__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "unfair_partner",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__kin_focused_moral__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "unfair_partner",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__kin_focused_moral__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "unfair_partner",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__kin_focused_moral__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "unfair_partner",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reproductive_selfish__s1103",
+      "mode": "off",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reproductive_selfish__s2207",
+      "mode": "off",
+      "seed": 2207,
+      "scenario": "unfair_partner",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reproductive_selfish__s3301",
+      "mode": "off",
+      "seed": 3301,
+      "scenario": "unfair_partner",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reproductive_selfish__s4409",
+      "mode": "off",
+      "seed": 4409,
+      "scenario": "unfair_partner",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "A",
+      "case_id": "unfair_partner__reproductive_selfish__s5519",
+      "mode": "off",
+      "seed": 5519,
+      "scenario": "unfair_partner",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_short__universal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "short",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_short__reciprocal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "short",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_short__kin_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "short",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_short__reproductive_selfish__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "short",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_long__universal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "long",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_long__reciprocal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "long",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_long__kin_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "long",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_long__reproductive_selfish__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "long",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_near_budget__universal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "near_budget",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_near_budget__reciprocal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "near_budget",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_near_budget__kin_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "near_budget",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C1_near_budget__reproductive_selfish__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C1",
+      "length": "near_budget",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_short__universal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "short",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_short__reciprocal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "short",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_short__kin_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "short",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_short__reproductive_selfish__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "short",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_long__universal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_long__reciprocal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_long__kin_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_long__reproductive_selfish__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_near_budget__universal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "near_budget",
+      "role": "universal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_near_budget__reciprocal_group_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "near_budget",
+      "role": "reciprocal_group_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_near_budget__kin_focused_moral__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "near_budget",
+      "role": "kin_focused_moral"
+    },
+    {
+      "experiment": "C",
+      "case_id": "C2_near_budget__reproductive_selfish__s7271",
+      "mode": "off",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "near_budget",
+      "role": "reproductive_selfish"
+    },
+    {
+      "experiment": "C",
+      "case_id": "actual_B_example_1_C1",
+      "mode": "off",
+      "seed": 9091,
+      "mechanism": "C1",
+      "actual_history_example": 1
+    },
+    {
+      "experiment": "C",
+      "case_id": "actual_B_example_1_C2",
+      "mode": "off",
+      "seed": 9091,
+      "mechanism": "C2",
+      "actual_history_example": 1
+    },
+    {
+      "experiment": "C",
+      "case_id": "actual_B_example_2_C1",
+      "mode": "off",
+      "seed": 9092,
+      "mechanism": "C1",
+      "actual_history_example": 2
+    },
+    {
+      "experiment": "C",
+      "case_id": "actual_B_example_2_C2",
+      "mode": "off",
+      "seed": 9092,
+      "mechanism": "C2",
+      "actual_history_example": 2
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__infant__universal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "universal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "infant__universal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__infant__reciprocal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "reciprocal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "infant__reciprocal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__infant__kin_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "kin_focused_moral",
+      "source_experiment": "A",
+      "source_case": "infant__kin_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__infant__reproductive_selfish__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "infant",
+      "role": "reproductive_selfish",
+      "source_experiment": "A",
+      "source_case": "infant__reproductive_selfish__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__stranger__universal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "universal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "stranger__universal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__stranger__reciprocal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "reciprocal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "stranger__reciprocal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__stranger__kin_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "kin_focused_moral",
+      "source_experiment": "A",
+      "source_case": "stranger__kin_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__stranger__reproductive_selfish__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "stranger",
+      "role": "reproductive_selfish",
+      "source_experiment": "A",
+      "source_case": "stranger__reproductive_selfish__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__cooperator__universal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "universal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "cooperator__universal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__cooperator__reciprocal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "reciprocal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "cooperator__reciprocal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__cooperator__kin_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "kin_focused_moral",
+      "source_experiment": "A",
+      "source_case": "cooperator__kin_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__cooperator__reproductive_selfish__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "cooperator",
+      "role": "reproductive_selfish",
+      "source_experiment": "A",
+      "source_case": "cooperator__reproductive_selfish__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__unfair_partner__universal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "universal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "unfair_partner__universal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__unfair_partner__reciprocal_group_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "reciprocal_group_focused_moral",
+      "source_experiment": "A",
+      "source_case": "unfair_partner__reciprocal_group_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__unfair_partner__kin_focused_moral__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "kin_focused_moral",
+      "source_experiment": "A",
+      "source_case": "unfair_partner__kin_focused_moral__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__unfair_partner__reproductive_selfish__s1103",
+      "mode": "low",
+      "seed": 1103,
+      "scenario": "unfair_partner",
+      "role": "reproductive_selfish",
+      "source_experiment": "A",
+      "source_case": "unfair_partner__reproductive_selfish__s1103"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__C2_long__universal_group_focused_moral__s7271",
+      "mode": "low",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "universal_group_focused_moral",
+      "source_experiment": "C",
+      "source_case": "C2_long__universal_group_focused_moral__s7271"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__C2_long__reciprocal_group_focused_moral__s7271",
+      "mode": "low",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "reciprocal_group_focused_moral",
+      "source_experiment": "C",
+      "source_case": "C2_long__reciprocal_group_focused_moral__s7271"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__C2_long__kin_focused_moral__s7271",
+      "mode": "low",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "kin_focused_moral",
+      "source_experiment": "C",
+      "source_case": "C2_long__kin_focused_moral__s7271"
+    },
+    {
+      "experiment": "R",
+      "case_id": "native_low__C2_long__reproductive_selfish__s7271",
+      "mode": "low",
+      "seed": 7271,
+      "mechanism": "C2",
+      "length": "long",
+      "role": "reproductive_selfish",
+      "source_experiment": "C",
+      "source_case": "C2_long__reproductive_selfish__s7271"
+    }
+  ],
+  "model": {
+    "path": "E:\\LLM-Morals\\social-evol-sim\\.local\\models\\Qwen3.8-27B-Q4_K_M.gguf",
+    "sha256": "c600de0300ae8a0eb3a6c0b8b5561b8b96f16bd2c863c2a66c42de29d391a747",
+    "quantization": "Q4_K_M",
+    "repository": "ggml-org/Qwen3.8-27B-GGUF",
+    "revision": "71bc7b627595dc8a91039addd9c791ae548d6747"
+  },
+  "llama_cpp": "version: 0.7.0-dev (build 11669, commit 620d2225c)\nbuilt with Clang 20.1.8 for Windows x86_64",
+  "server": {
+    "log": "E:\\LLM-Morals\\social-evol-sim\\data\\qwen38_remediation_v2_20261016\\server\\llama-20261016T054734Z.log",
+    "pid": 6232,
+    "arguments": [
+      "--model",
+      "E:\\LLM-Morals\\social-evol-sim\\.local\\models\\Qwen3.8-27B-Q4_K_M.gguf",
+      "--alias",
+      "Qwen3.8-27B-Q4_K_M",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8080",
+      "--ctx-size",
+      "65536",
+      "--parallel",
+      "1",
+      "--n-gpu-layers",
+      "all",
+      "--device",
+      "CUDA0",
+      "--split-mode",
+      "none",
+      "--fit",
+      "off",
+      "--flash-attn",
+      "on",
+      "--cache-type-k",
+      "q8_0",
+      "--cache-type-v",
+      "q8_0",
+      "--no-mmproj",
+      "--jinja",
+      "--reasoning",
+      "auto",
+      "--reasoning-format",
+      "deepseek",
+      "--reasoning-effort",
+      "low",
+      "--reasoning-budget",
+      "2048",
+      "--no-context-shift",
+      "--timeout",
+      "3600",
+      "--metrics",
+      "--offline",
+      "--log-verbosity",
+      "4",
+      "--log-file",
+      "E:\\LLM-Morals\\social-evol-sim\\data\\qwen38_remediation_v2_20261016\\server\\llama-20261016T054734Z.log"
+    ],
+    "context": 65536,
+    "executable": "E:\\LLM-Morals\\social-evol-sim\\.local\\llama-b11669\\llama-server.exe",
+    "started_at": "2026-10-16T05:47:34.1562790Z"
+  },
+  "server_props": {
+    "default_generation_settings": {
+      "params": {
+        "seed": 4294967295,
+        "temperature": 1.0,
+        "dynatemp_range": 0.0,
+        "dynatemp_exponent": 1.0,
+        "top_k": 20,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "top_n_sigma": -1.0,
+        "xtc_probability": 0.0,
+        "xtc_threshold": 0.10000000149011612,
+        "typical_p": 1.0,
+        "repeat_last_n": 64,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "dry_multiplier": 0.0,
+        "dry_base": 1.75,
+        "dry_allowed_length": 2,
+        "dry_penalty_last_n": 64,
+        "mirostat": 0,
+        "mirostat_tau": 5.0,
+        "mirostat_eta": 0.10000000149011612,
+        "adaptive_target": -1.0,
+        "adaptive_decay": 0.8999999761581421,
+        "max_tokens": -1,
+        "n_predict": -1,
+        "n_keep": 0,
+        "n_discard": 0,
+        "ignore_eos": false,
+        "stream": false,
+        "n_probs": 0,
+        "min_keep": 0,
+        "chat_format": "Content-only",
+        "reasoning_format": "none",
+        "reasoning_in_content": false,
+        "generation_prompt": "",
+        "samplers": [
+          "penalties",
+          "dry",
+          "top_n_sigma",
+          "top_k",
+          "typ_p",
+          "top_p",
+          "min_p",
+          "xtc",
+          "temperature"
+        ],
+        "speculative.types": "none",
+        "timings_per_token": false,
+        "post_sampling_probs": false,
+        "backend_sampling": false,
+        "lora": []
+      },
+      "n_ctx": 65536
+    },
+    "total_slots": 1,
+    "model_alias": "Qwen3.8-27B-Q4_K_M",
+    "model_ftype": "Q4_K - Medium",
+    "model_path": "E:\\LLM-Morals\\social-evol-sim\\.local\\models\\Qwen3.8-27B-Q4_K_M.gguf",
+    "modalities": {
+      "vision": false,
+      "video": false,
+      "audio": false
+    },
+    "media_marker": "<__media_BcMpZC4AlnktrkhnF29xUbYHR2erak3Z__>",
+    "endpoint_slots": true,
+    "endpoint_props": false,
+    "endpoint_metrics": true,
+    "ui": true,
+    "ui_settings": {},
+    "chat_template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- set reasoning_instructions = '' %}\n{%- if enable_thinking is undefined or enable_thinking is true %}\n    {%- set resolved_reasoning_effort = reasoning_effort|default('xhigh') %}\n    {%- if resolved_reasoning_effort not in ('xhigh', 'medium', 'low') %}\n        {{- raise_exception('Unexpected reasoning effort ' ~ reasoning_effort ~ '. Supported types are xhigh (default), medium, and low.') }}\n    {%- endif %}\n    {%- if resolved_reasoning_effort == 'xhigh' %}\n        {%- set reasoning_instructions = 'Reasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.' %}\n    {%- elif resolved_reasoning_effort == 'low' %}\n        {%- set reasoning_instructions = 'Reasoning effort is set to low. Keep your thinking brief and focused, moving directly to the conclusion without unnecessary elaboration.' %}\n    {%- endif %}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if reasoning_instructions %}\n        {{- reasoning_instructions + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '<|im_start|>system\\n' + (reasoning_instructions + '\\n\\n' if reasoning_instructions else '')  + content + '<|im_end|>\\n' }}\n        {%- elif reasoning_instructions %}\n            {{- '<|im_start|>system\\n' + reasoning_instructions + '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- elif reasoning_instructions %}\n        {{- '<|im_start|>system\\n' + reasoning_instructions + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if preserve_thinking is undefined or preserve_thinking is true or loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is defined and tool_call.arguments != '' %}\n                    {%- for args_name, args_value in tool_call.arguments|items %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | string if args_value is string else args_value | tojson | safe %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- else %}\n        {{- '<think>\\n' }}\n    {%- endif %}\n{%- endif %}",
+    "chat_template_caps": {
+      "supports_object_arguments": true,
+      "supports_parallel_tool_calls": true,
+      "supports_preserve_reasoning": true,
+      "supports_reasoning_effort": true,
+      "supports_string_content": true,
+      "supports_system_role": true,
+      "supports_tool_calls": true,
+      "supports_tools": true,
+      "supports_typed_content": true
+    },
+    "bos_token": "<|endoftext|>",
+    "eos_token": "<|im_end|>",
+    "build_info": "b11669-620d2225c",
+    "is_sleeping": false,
+    "cors_proxy_enabled": false
+  },
+  "gpu": {
+    "used_mib": 21436.0,
+    "total_mib": 24576.0,
+    "utilization_percent": 2.0,
+    "power_watts": 31.57
+  },
+  "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+  "environment_seeds": [
+    20261017,
+    20261019,
+    20261023
+  ],
+  "sampling_seeds": [
+    1103,
+    2207,
+    3301,
+    4409,
+    5519
+  ],
+  "additional_seeds": [
+    6619,
+    7723,
+    8837,
+    9941,
+    10559
+  ],
+  "deterministic_inference_claim": false,
+  "environment_rng_note": "Seeded shared RNG in place; UUID identifiers remain nondeterministic. Frozen paired checkpoint snapshots control identities.",
+  "memory_checks": "observational; no corrective memory retries; raw and applied memory measured separately",
+  "adaptive_A_rule": "After five repetitions, extend both cells of any primary contrast whose nonzero HP differences have both signs or whose delete-one paired mean changes sign. Five additional paired sampling seeds, maximum ten; uncertainty retained thereafter.",
+  "primary_contrasts": [
+    "Universal minus selfish target HP in stranger",
+    "Reciprocal cooperator minus exploitative partner target HP",
+    "Kin adult offspring minus equally needy stranger target HP"
+  ],
+  "context": {
+    "size": 65536,
+    "output_reserve": 8192,
+    "reflection_overhead_reserve": 2304,
+    "no_context_shift": true
+  },
+  "native_comparison": {
+    "off_baseline_reused_exactly": true,
+    "pairs": 20,
+    "low_reasoning_budget": 2048,
+    "two_stage_reflection": true
+  },
+  "thresholds": {
+    "eventual_action_validity": 0.99,
+    "first_attempt_action_validity": 0.9,
+    "critical_memory_anchor_accuracy": 0.9,
+    "human_moral_consistency_target": 0.8
+  },
+  "subjective_scoring": "Independent review pending; no Qwen self-judge; behavior categories and factual anchors are diagnostic proxies, not the paper's confusion-matrix metric",
+  "pre_execution_amendment": {
+    "at": "2026-10-16T06:26:37Z",
+    "reason": "Add four explicitly planned C1/C2 tests sourced from the corrected B history; no corrected inference has run."
+  },
+  "mode_selection_rule": "Choose low only for >=2 extra factual anchors with no regression in action success, structure, explicit contradictions or universal harm; otherwise retain OFF for protocol continuity, not latency. Human ratings pending.",
+  "software_amendment": {
+    "at": "2026-10-16T06:45:15Z",
+    "excluded_execution": "preparation/initial_rng_audit_execution",
+    "reason": "Copied-action validation now preserves all RNG state; cemetery-aware genealogy verification; two early engineering decisions preserved and excluded. No thresholds, sample counts or moral prompt text changed."
+  },
+  "fixture_hashes": {
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\adult_offspring\\checkpoint.json": "0740bb80606fbf3744ec61a16db3586de0bf020e9b123f76fc0d0a8a867e61fe",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\adult_offspring\\initial.json": "c9465e9bebb4bf88ddf20fe570f633752dc6f62a2786d034668ddf50e56b9141",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\cooperator\\checkpoint.json": "451680ea219d593b7f467cfe088bd6d5ddd112b2fb2c84cd90957ea386ea9c38",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\cooperator\\initial.json": "8bc1629e16543e004da70676e7b0335ab9da4905c4a4c20519738af14c4f35a0",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\infant\\checkpoint.json": "849da5723f578eb962cea228fd463e0067b600b247e779ded9916fd0e1c0aa82",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\infant\\initial.json": "04c7f982f2a18900c05752576a4ccd66204c7b9a17a9b438449e8407cb80bbeb",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\stranger\\checkpoint.json": "7d9507b0d7389bb302dde77859f0be650fdcc3da90d2a9f2b33e8d2e5ca7ddcb",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\stranger\\initial.json": "0aa1ea2e41ac3ef527a6ca7a9f5543331bbe83507daa3223bdb8d36fbb219c98",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\unfair_partner\\checkpoint.json": "2081e5a1e2759aa1d7da9107c4eadddd4caab49033a5708ee8c0182e137ec4a6",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\A_paired_pure_validation\\unfair_partner\\initial.json": "3f11afd8424d1b51c8f01ea4db79b7b5040406d8ed09aef8e092461b60a44029",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\long\\checkpoint.json": "ef9a7fdb63b7866e9d9847ac18f45f8e5d40614a05be4797a88793d0f0b45b85",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\long\\initial.json": "d8fa733aefba5fd633597fe1380fcbe7ae6d1560627124b226a5183da0de8746",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\near_budget\\checkpoint.json": "1cdf0055ca1870c561bbb9e8b5a9f5d6516838801c377a115dfae7407efcf965",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\near_budget\\initial.json": "b04901e5a177bfb04fbbced4a01ff272565a3bbb2d36184fe587927ae6d7aec7",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\short\\checkpoint.json": "c30f01eee8e6bf06ce9cbbd60fb863ae5ca6d83cc8451cd5c24e041ad849c413",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\short\\initial.json": "db2e5a2809f3a21d0be61903f6ab9dd4cd4e636bc59f39ee6f15e1b800940d5b",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\long\\checkpoint.json": "c1b06dcbeb94b3779a88f6741de2dff0f275c25034f2447e41d28a58fc59d57c",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\long\\initial.json": "dc7479ee5be7d01a1c07dbcee2893fe40ea64ab6cd4e27f637e25aa740633e16",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\near_budget\\checkpoint.json": "57e3877337c72a8c7bfa5f241250970d03165cd4cb71c96866ea19db95c3395a",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\near_budget\\initial.json": "37a0004aafc03551abad21dbe38307fa582c625bea4397558ce491081b6b03f3",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\short\\checkpoint.json": "4905b10d47f197af6868da673af39d253f9d313f2f0b5263f806012f7317ed41",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\short\\initial.json": "d09905968a98f099b73a5dafb76a360f6f07e1b7c74ef10bb4d34e85ff06ce89",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\history\\long\\checkpoint.json": "c1b06dcbeb94b3779a88f6741de2dff0f275c25034f2447e41d28a58fc59d57c",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\history\\long\\seeded_memory.json": "b6e2458141889a10947f86b9b0a377085a59e3458522d54e0d0da3b0bad478e7",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\history\\near_budget\\checkpoint.json": "57e3877337c72a8c7bfa5f241250970d03165cd4cb71c96866ea19db95c3395a",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\history\\near_budget\\seeded_memory.json": "b6e2458141889a10947f86b9b0a377085a59e3458522d54e0d0da3b0bad478e7",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\history\\short\\checkpoint.json": "4905b10d47f197af6868da673af39d253f9d313f2f0b5263f806012f7317ed41",
+    "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\history\\short\\seeded_memory.json": "b6e2458141889a10947f86b9b0a377085a59e3458522d54e0d0da3b0bad478e7"
+  },
+  "communication_ground_truth_correction": {
+    "at": "2026-10-16T08:20:10Z",
+    "reason": "Prevent factual false positives for real communications recorded in structurally invalid memory slots.",
+    "C_inference_started": false,
+    "changed_metadata": [
+      {
+        "path": "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\long\\initial.json",
+        "before_sha256": "a18a079f06524953f5dbb74b9ba1d14cd271e0c494ab89345fd88dec418d9e72",
+        "after_sha256": "d8fa733aefba5fd633597fe1380fcbe7ae6d1560627124b226a5183da0de8746",
+        "event_count": 57
+      },
+      {
+        "path": "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\near_budget\\initial.json",
+        "before_sha256": "c603fd485358987abaf3a135377f06174a39bf057d4c88eff06a227935e96f5f",
+        "after_sha256": "b04901e5a177bfb04fbbced4a01ff272565a3bbb2d36184fe587927ae6d7aec7",
+        "event_count": 57
+      },
+      {
+        "path": "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C1\\short\\initial.json",
+        "before_sha256": "6289ff95784389dc8759fb0a30e978d4a0e9207b8695b280081255403bda1492",
+        "after_sha256": "db2e5a2809f3a21d0be61903f6ab9dd4cd4e636bc59f39ee6f15e1b800940d5b",
+        "event_count": 8
+      },
+      {
+        "path": "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\long\\initial.json",
+        "before_sha256": "847eb749e0626b6b0e78a8656f35d3b4632cdc27ed97e13b51649a5b5b9bacfe",
+        "after_sha256": "dc7479ee5be7d01a1c07dbcee2893fe40ea64ab6cd4e27f637e25aa740633e16",
+        "event_count": 57
+      },
+      {
+        "path": "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\near_budget\\initial.json",
+        "before_sha256": "0cfcf0926f0a62ab760250c9f72cab865701e1d4fd26569980552ceb12072cbd",
+        "after_sha256": "37a0004aafc03551abad21dbe38307fa582c625bea4397558ce491081b6b03f3",
+        "event_count": 57
+      },
+      {
+        "path": "data\\qwen38_remediation_v2_20261016\\fixtures\\memory_pure_validation\\C2\\short\\initial.json",
+        "before_sha256": "f62bc156853d9f7fdc11369b4a24c46bec6230a076f71cfce50eb235670ee010",
+        "after_sha256": "d09905968a98f099b73a5dafb76a360f6f07e1b7c74ef10bb4d34e85ff06ce89",
+        "event_count": 8
+      }
+    ],
+    "model_inputs_changed": false,
+    "model_outputs_changed": false,
+    "scoring_thresholds_changed": false,
+    "source_code_changed": false
+  }
+}

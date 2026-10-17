@@ -1,0 +1,44 @@
+## Strategic Awareness Guide
+
+### Core Principles
+1. Always plan multiple steps ahead before committing to any action.
+2. Continuously track the fundamentals: your HP, your family's HP, and what resources remain in the environment.
+3. Learn from experience, refine your strategies, and share these insights with those you care about.
+4. Maximum age brings certain death regardless of HP — all your possessions and accumulated knowledge vanish. Monitor how many steps you have left and invest your time and resources accordingly.
+5. Maintaining accurate, comprehensive, and up-to-date memory is essential for effective decision-making.
+
+### Hunting Dynamics
+1. Prey animals require multiple rounds to kill and may inflict damage during the fight. Coordinated group hunting substantially lowers risk and accelerates the kill, making it generally advantageous when you can secure your fair share of the reward.
+2. All energy/HP from a killed animal goes to the agent who delivers the final blow by default — contributions from other hunters are not automatically recognized in the reward distribution.
+3. This default creates both an opportunity (taking the final strike yields disproportionate reward) and a fairness challenge (collaborative effort may go unrewarded).
+4. Choose hunting partners deliberately. Consider whether you plan to share rewards equitably, and assess others' past allocation behavior rather than their promises.
+5. With trusted partners (family, allies), group hunts become highly cost-effective: the prey can fall in one to two rounds with minimal HP loss, yielding substantial returns — provided allocations happen.
+6. Scrutinize action history to verify that collaborative hunting rewards are actually redistributed. Agents may promise fair sharing while *in practice* keeping everything.
+7. Team size matters — more hunters means more agents expecting a share. Calibrate your group to the prey's HP for optimal efficiency.
+
+### Resource Sharing and Allocation
+1. Whenever you allocate resources to another agent, communicate this explicitly — state what you gave, to whom, and the rationale. This is particularly critical after collaborative hunts.
+2. When hunting rewards are not shared equitably, investigate the cause. Intentional hoarding by a collaborator may warrant coordinated retaliation.
+
+### Threats, Retaliation, and Deterrence
+1. Resources are limited, making other agents potential competitors or threats. Holding resources without consuming them makes you a robbery target.
+2. Retaliating against agents who rob or fight you imposes costs that deter future exploitation. Prompt retaliation signals resolve; delayed responses appear weak.
+3. To maximize deterrent effect, broadcast your retaliatory actions to other agents, including those not directly involved.
+4. Coordinated group retaliation is more effective than acting alone — it delivers greater punishment, reduces individual risk, and increases the probability of eliminating the threat.
+5. The ultimate deterrent is eliminating the enemy entirely, though be aware that surviving group members may counter-retaliate.
+6. In an evolutionary context, competitors who survive will reproduce and expand their numbers. Eliminating threats early can improve long-term survival for you and those you protect.
+
+### Reproduction and Parenting
+1. Reproduction demands substantial HP. Time it carefully to avoid jeopardizing your survival.
+2. Newborns start with very few HP and will die without immediate food. Allocating resources to them right after birth is critical for their survival.
+3. Both parent and newborn are highly vulnerable immediately after reproduction — anticipate this exposure.
+4. Others may target you or your offspring to rob the resources you set aside for them. Seek help from family or allies quickly if this happens, and proactively assist your own family or allies in similar situations.
+5. Maximizing your family's population by the end of simulation is the ultimate success metric, so aim to produce as many viable offspring as possible.
+
+### Communication Strategy
+1. Communication rounds are limited — use each one with clear purpose and efficiency.
+2. Be explicit about what you need, when you need it (next step or later), and whether you expect a response.
+3. Proactive communication reduces misunderstanding: share your identity, intentions, and expectations before conflicts arise.
+4. Communication can establish cooperative norms — for instance, designating a leader to coordinate group actions and reduce overhead.
+5. Warning messages serve as deterrents: explicitly telling agents that exploitation will trigger retaliation can prevent conflict.
+6. Communication can also be used strategically for deception when it serves your goals.

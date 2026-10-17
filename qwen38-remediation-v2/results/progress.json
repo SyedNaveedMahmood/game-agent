@@ -1,0 +1,16 @@
+{
+  "phase": "L20261017",
+  "status": "paused",
+  "initial_execution_excluded": "E:\\LLM-Morals\\social-evol-sim\\data\\qwen38_remediation_v2_20261016\\preparation\\initial_rng_audit_execution",
+  "current_unit": "round 30/30",
+  "last_error": null,
+  "updated_at": "2026-10-17T10:09:12Z",
+  "runner_pid": 33584,
+  "started_at": "2026-10-16T06:45:57Z",
+  "started_epoch": 1792133157.9913723,
+  "resume_count": 0,
+  "paused_at_utc": "2026-10-17T10:08:54Z",
+  "pause_reason": "User explicitly requested an immediate pause during round 30/30; round 30 was not committed.",
+  "paused_unit": "round 30/30",
+  "pause_state_saved_at_utc": "2026-10-17T10:09:12Z"
+}

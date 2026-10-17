@@ -1,0 +1,36 @@
+## regarding reproduction
+1. Remember reproduction takes a lot of HP. Be strategic to ensure your survival.
+2. The new born kids urgently need food since they only have just a few health points available, which means if they don't get food withint these few time steps they will die. For parenting, it maybe wise to share to them immediately when they are born. For attacking, both the parent and the children are the vulnerable targets at this moment.
+3. Since an ultimate success metric is the proportion of your family in the whole population by the end of simulation, you want to have as many children as possible.
+4. Others might rob you out of resource to give to your new born children. If that happens, try to get help from your other family members or allies as soon as possible. You might also want to actively help your family or allies who are in such situtaion.
+
+## regarding robbery, attack or retaliation
+1. Some people may pose a competition threat to you since the resource is limited, and they might rob you. If you keep resources with you without consuming them it might have a high chance being robbed away.
+2. It is a strategy to retaliate to incur higher cost to the one harming you (rob, attack etc) to deter them from doing it again. You can also add communication explicitly to let others know. 
+3. A deeper retaliation is to kill the enemy to eliminate the threat altogether. However, his family and alies might want to revenge for them.
+4. Attack or retaliate together can be helpful, since it can incur higher punishment to make the enemy fear. Also to kill a person is often takes many attacks, so that person might fight back and cost high damage to you before killing (or even kill you). So getting severl people to attack altogether can increase the chance and success rate to kill a person.
+
+
+## regarding hunting
+1. The last one who strike the animal to death gets all the meat. So even if people collaborated on hunting, the resource distribution is not automatically based on the contribution. 
+2. This poses both an opportunist way to get more resources with lower cost.
+3. This also poses a question of fair sharing and partner selection. You want to think about who you want to hunt together, if you choose to collaborate. And you want to think about if you want to share fairly, and what you can know and should do based on others sharing behavior.
+4. Animals takes multiple attemps to kill, meanwhile they may fight back and cause harm to you. Getting people to hunt together can reduce the risk, harm, and time, and increase success rate. If you can ensure getting your share, it's generally a better strategy to hunt together.
+
+## regarding judgement
+1. Be careful when judging others of their moral type. For example, if you see  someone not sharing after hunting together, you may be tempted to judge he's immoral. But maybe he hasn't had time to share yet - he can only take one action at one time; or he got robbed immediately after. For another example, you may see someone robbing others, but he may be trying to punish that one for other wrongdoing. 
+
+## regarding communication
+1. Other people might not understand who you are and your intention etc. You may want to communicate it explicitly to reduce mis-understanding or to coordinate better. You may also ask to clarify. 
+2. On the other hand, you may also use communication to deceive and achieve your goal too. 
+3. But be concise in communication. Every time step you communicate you cannot take other action (collecting, hunting, attack etc), taking away your chance to get resources or attack/rob/defend. 
+
+## regarding evolution competition
+1. Remember the resources are limited. The more enemies out there to get resources the less you and who you care will get. And the enemies will have children who are also enemies, increasing their population. 
+2. It is a strategy to kill all the enemies/comeptitors to ensure better survival chance of you and your family and who you care. The enemies also see you as enemies, and they might consider kill you too. Also since an ultimate success metric is the proportion of your family in the whole population by the end of simulation, killing all enemies is a quick way to reach it.
+
+## In General
+1. Think several step ahead before making decision. 
+2. Always calculate the basics for you you and your family's survival: HP status, inventory status, and how much is available in the environment etc. 
+3. Reflect and take lessons, and pass on lessons to whom you care.
+4. You will die after you reach maximum age no matter your HP, and inventories and knowledges will be gone. ALWAYS check how many steps before you reach your max age, and try to use your time and resources wisely.

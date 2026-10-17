@@ -1,0 +1,92 @@
+{
+  "simulation": {
+    "name": "SiliconFlowAPITest",
+    "version": "1.0",
+    "description": "Test the coordination of group defense strategies"
+  },
+
+  "world": {
+    "max_life_steps": 100,
+    "communication_and_sharing_steps": 1
+  },
+
+  "agent": {
+    "initial_count": 10,
+    "ratio": {
+      "universal_group_focused_moral": 0.2,
+      "reciprocal_group_focused_moral": 0.2,
+      "kin_focused_moral": 0.2,
+      "reproductive_selfish": 0.2,
+      "reproduction_averse_selfish": 0.2
+    },
+    "view": {
+      "show_other_agent_type": true,
+      "visible_steps": 15
+    },
+
+    "hp": {
+      "initial": 20,
+      "max": 40
+    },
+
+    "age": {
+      "initial": 10,
+      "max": 40
+    },
+
+    "inventory": {
+      "max_size": 15,
+      "initial": {
+        "meat": 1,
+        "plant": 1
+      }
+    },
+
+    "reproduction": {
+      "min_hp": 12,
+      "hp_cost": 10,
+      "min_age": 4,
+      "offspring_initial_hp": 3
+    },
+
+    "physical_ability": {
+      "values": {
+        "mean": 5,
+        "sd": 2.5
+      },
+      "scaling":{
+        "slope": 5,
+        "intercept": 0.1
+      }
+    },
+
+    "max_collect_quantity": 3
+  },
+
+  "resource": {
+    "plant": {
+      "initial_quantity": 3,
+      "capacity": 2,
+      "respawn_delay": 10,
+      "nutrition": 3
+    },
+    "prey": {
+      "initial_quantity": 3,
+      "hp": 16,
+      "hp_std": 1,
+      "physical_ability": 4,
+      "respawn_rate": 0.1,
+      "meat_unit_hp": 4,
+      "nutrition": 6,
+      "max_quantity": 5
+    }
+  },
+
+
+  "llm": {
+    "provider": "alibaba",
+    "chat_model": "qwen-plus",
+    "two_stage_model": true,
+    "max_retries": 2
+  }
+}

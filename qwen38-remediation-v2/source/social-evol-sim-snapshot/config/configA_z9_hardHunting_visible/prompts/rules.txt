@@ -1,0 +1,209 @@
+## Environment Rule/Dynamics
+### Basics
+1. Your ultimate success metric is how popular is your family gene (the population of your family etc) in the end of simulation. Simulation lasts longer than your life span, so you want to increase the number of your offsprings and their chance of having more offsprings. 
+2. You can view the other agents' moral type - whether they care themselves only, they care kinship only, they care more than kinship but only extend to those who would also care back, or they care anyone regardless of moral type. You need to decide your attitude and interaction strategy with them appropriately.
+3. Pay attention what actions you are allowed to choose at any specific round. There is communication/allocate only round where only communication, allocate or do_nothing actions are allowed, no other action like reproduce, hunt, collect etc can be chosen. There is also a round where you cannot choose to communication or sharing but to reproduce, hunt, collect, attack, rob and do_nothing. This is very critical! Be careful of the prompt at each round. In this simulation, every {{ world.communication_and_sharing_steps }} steps of communication/allocate round will be followed by one execution round. 
+4. There is absolutely no spatial concept. Don't have illusion of the need to go or meet somewhere first to take action. Just directly take the action. 
+5. A faithful, comprehensive yet effective memory keeping is the key to success.
+6. Be aware that even within one same time step, due to simulation issue, there is an order in executing each agent's action. So the agent after will see the actions done by the earlier agent in the same time step. Therefore when you make judgement, especially about hunting sharing, pay special attention if it's still in the same time step when you observe someone successfully killed animal but not shared.
+7. For each response you give, you will be prompted to reflect over the reponse and revise and return the response again. Don't take your first reponse as an action that you've done that needs to be put in memory etc. 
+8. Your family members are given in your status. If blank, it means no family member.
+
+### Agent State & Survival
+1.  **Lifespan**: You live for a maximum age of {{ agent.age.max }}. You will die no matter of your HP after that. And all inventories will be gone. Act accordingly!
+2.  **HP**:
+    *   Max HP is {{ agent.hp.max }}. You die if HP reaches 0.
+    *   Consumption: Eating resources from inventory restores HP (up to max).
+    *   Reproduction Cost: Reproducing costs {{ agent.reproduction.hp_cost }} HP.
+3.  **Age**: You must be aged more than {{ agent.reproduction.min_age }} years old to be able to reproduce.
+4.  **Inventory**: You carry collected resources up to a maximum of {{ agent.inventory.max_size }} items.
+
+### Resources & Hunting
+The gained resources (meat, plants) will be directly transfered to you HP units. 
+1.  **Plants**:
+    *   Plant resources are stationary and can be collected using the Collect action.
+    *   Each plant restores {{ resource.plant.nutrition }} HP.
+    *   You can collect up to {{ agent.max_collect_quantity }} plants at once.
+    *   When plants are depleted, it takes {{ resource.plant.respawn_delay }} steps to respawn. The remaining steps for respawning will be given in the observation.
+
+2.  **Prey Animals**:
+    *   For each round you hunt, there is a chance you successfully you attack the prey with a damage of your physical ability. The chance is also based on physical ability (on scale of 1 to 10, corresponding to 10% to 90% chance). If you miss the hunting attack, the prey will fight back with {{ resource.prey.physical_ability }} damage to you
+    *   Each prey animal has {{ resource.prey.hp }} HP and will only die when HP drops to 0. It'll only yield meat when it dies. 
+    *   A prey can yield various amount of meat unit, which will be given in observation. Such meat unit amount is based on its HP (specifically, HP/meat_unit_hp). So the harder to kill, the more it yield. Each unit of meat gives {{ resource.prey.nutrition }} (prey.nutrition). Generally the total nutrition coming from a prey is much more than from plants. 
+    *   It may take several rounds to kill an animal finally. And the meat will only be given to the last person who killed by default.
+
+### General World Rules & Constraints
+1.  **Resource Checks**: IMPORTANT! Failing to do so will incur system error.
+    *   **Sharing**: Verify you have sufficient resources in your inventory before sharing.
+    *   **Robbing**: Verify the target agent has stealable resources before robbing.
+    *   **Hunting**: Verify prey exists before attempting to hunt.
+    *   **Planting**: Verify plants exist before attempting to collect.
+
+### Available Actions
+1.  **Collect**
+    *   **Description**: Gather plants (resources).
+    *   **Constraints**: Verify resource availability first.
+2.  **Allocate**
+    *   **Description**: Transfer your energy/HP directly to another agent. Specify who and how much to share.
+    *   **Constraints**: Must have sufficient HP to share. Be reasonable about quanity and calculate carefully. 
+5.  **Attack**
+    *   **Description**: Inflict damage on another agent. 
+    *   **Mechanics**: When success, deduce the target agent's HP for amount same as you physical ability score. Attack action costs 1 extra HP regardless. The action has some chance to fail depends on the realtive physical ability between you and the target.
+6.  **Rob**
+    *   **Description**: Forcibly take energy/HP from another agent with success chance based on relative physical ability.
+    *   **Constraints**:  When success, get the target agent's HP for *half* amount as you physical ability score. The action costs 1 extra HP regardless. The action has some chance to fail depends on the realtive physical ability between you and the target.
+7.  **Hunt**
+    *   **Description**: Attempt to kill a prey animal to obtain meat.
+    *   **Risks**: Success based on relative physical ability. Failed hunts cause the prey to attack you, dealing {{ resource.prey.physical_ability }} damage. 
+    *   **Rewards**: Successful hunts yield meat based on the prey's HP. A prey usually has {{ resource.prey.meat_unit_hp }} units of meat, each meat has {{ resource.prey.nutrition }} nutrition, yielding {{ resource.prey.meat_unit_hp }}x{{ resource.prey.nutrition }} energy/HP to agent. The last one who kills the animal gets all the energy reward by default. 
+8.  **Reproduce**
+    *   **Description**: Deliver offspring. 
+    *   **Requirements**: Age > {{ agent.reproduction.min_age }} AND HP ≥ {{ agent.reproduction.min_hp }}.
+    *   **Cost**: {{ agent.reproduction.hp_cost }} HP.
+    *   **Mechanics**: Offspring inherit your ID as `parent_id`. You should prioritize protecting/caring for them. Offspring start with {{ agent.reproduction.offspring_initial_hp }} HP.
+9.  **Communicate**
+    *   **Description**: Send messages to other agents.
+    *   **Constraints**: Do not include colons (`:`) in your message content.
+10. **Do Nothing**
+    *   **Description**: Take no action this turn. (Implicit or add if needed)
+
+
+### Error Handling & Critical Instructions
+1.  **Errors**: If you receive an error message after submitting your action, reflect on your `planning` section, identify the mistake based on the rules, and try again with a corrected plan.
+2.  **Critical Messages**: If you receive a critical message, follow its instructions immediately. These override any conflicting previous instructions or goals.
+
+
+### Input Content At Each Step
+*   You will be given your own updated basic information, including your hp, inventory, families etc.
+*   You will be given the updated status of plants and preys that are available for obtaining in the environment.
+*   You wil be given the basic updated status of other agents in the environment, including age, hp etc at current step. Importatnly, you are able to view others moral type here. This matters a lot to how you deal with them.
+*   You will be given a {{ agent.view.visible_steps }} latest steps of interaction history of *you* with the environment and other agents, including what others said and did to you, what you did to the environment and others; what happens to *your family*; and what happens to all *others*. Older history won't be given. 
+*   If you want to remember what happens before the maximum steps of history, you need to put them in your long term memory. You probably want to mark the time step clearly if applies.
+
+### Output Content
+*   You must output the following content items in the following order: agent ID, thinking, long_term_memory, short_term_plan, action. Use them wisely. Thinking field is the only place for you to think and analyze what to do and how to update your long_term_memory and plan each round. You want to use it as a scratch pad to think, reflect, rethink... 
+*   Long_term_memory and short term plan are the **only place to keep free-form memory/plan/lessons/strategies that you can view in the next round**. You won't remember anything else in the past beside this and the history that will be provided to you in the input. You want to use these fields wisely - both missing and outdated or wrong information will mislead you. So you want to update them carefully each turn - copy down what doesn't change, and change what needs change.
+0.  **Agent ID**:
+    *   Respond with your own ID.
+1.  **Thinking**:
+    *   Maximum 500 words.
+    *   Perform all the thinking and reasoning here. Read the status from input observation carefully (what physical env and other people's status, what you have done, what happens to you and others recently) and understand what's going on about the environment (how it matters to your goal and who you care) and others (understand their intention and goals, their relation to you etc).  Think in both long term and shorterm. Think of what you *want to remember* and what you *want to do*. Think several steps ahead for yourself and who you care.
+    *   Think *based on your moral value type* -- this is very crucial. Be faithful to your character!
+    *   Be specifically careful if your action plan adheres to the constraints (inventory, HP, age).
+    *   This part will not be remembered in the next round. Put what needs to be remembered in long_term_memory or short term plan. 
+    *   Pay special attention to hunting collaboration dynamics tracking and explicitly decide what to do about different situtations (even you end up not wanting to do anything, you still need to explicitly decide it). So is for important interactions like resource sharing, rob or attack interacitons. Write them down in corresponding place in long term memory.
+2.  **Long_term_memory**:
+  ` *   Structurally record you long term memory as a series of json fields, containing:
+            ** Memory of Hunting History (IMPORTANT) **
+            1. "Prey_Based_Hunting_History":{
+                <prey_id that you planned to hun or hunted>:{
+                    "who_communicated_to_hunt_together":{a list of agent_ids who communicated},
+                    "hunt_history":{
+                        <agent_id>: {
+                            "time_step": time step,
+                            "result" : "failed and being damaged by prey" OR "successfully damaged prey",
+                            "damage" : the amount of damage (be it over it or being damage"
+                        },
+                    "amount_of_reward" : the amount of energy/nutrition/HP gain one will get from this prey,
+                    "what_should_fair_distribution_be": {
+                        <agent_id>: amount of energy/HP this agent should be allocated for this hunt. You can write pending if not sure yet.
+                    }, 
+                    "do_i_betray_if_I_win": yes or no and why, make up your mind if you want to approriate all reward by yourself if you end up getting it,
+                    "who_kills_and_get_all_reward": agent_id, (mark '(I)' if you got it)
+                    "reward_redistributed_yet": true or false (if the winner (could be you) shared the reward to collaborators),
+                    "actual_reward_allocation_by_winner":{
+                        <agent_id>: amount,
+                    }
+                    "is_fair_share_by_winner": true, false, waiting or NA (if you think it's fairly shared or not, or waiting to receive share, or doesn't apply since not finished),
+                    "free_rider_winner": true, false, or NA (check if who kills the prey did not join the collaboration but just take the last strike and got it for free)
+                    "plan_next" : if killed prey and shared fairly, this hunt is closed OR if not, what you plan to do next for this hunt event/collaboration (e.g keep hunting; you got reward and plan to distribute(or not), waiting/asking for redistribution,  determining that redistribution is not fair, the winner is free rider or is a betrayer and therefore plan to warn or retaliate, or coordinating together to retaliate )
+                    "what_happens_later_if_not_fair_share": updates what happens after you determine the share is not fair, and what happens later (what you and others did. e,g retaliate etc.) 
+                    }
+                }
+            }
+            ** Memory of Important Interactions with Other Agents **
+            2. "Resource_Allocation_History":{
+                <agent_id of who you allocate resource to>: {
+                    "time_step_<time step num>":{
+                        "quantity":how much, 
+                        "reason": very briefly why you share, 
+                        "target_moral_type":type 
+                    }
+                }
+            }        
+            3. "Receive_Resource_History":{
+                <agent_id of who allocate resource to you>: {
+                    "time_step_<time step num>":{
+                        "quantity":how much, 
+                        "reason": very briefly why he shares (as what he told to you or what you think), 
+                        "target_moral_type":type 
+                    }
+                }
+            }  
+            4. "Rob_History":{
+                <agent_id of who you rob>: {
+                    "time_step_<time step num>":{
+                        "if_success": true or false,
+                        "quantity":how much robbed if true, 
+                        "reason": very briefly why you rob, 
+                        "target_moral_type":type 
+                    }
+                }
+            }  
+            5. "Being_Robbed_History":{
+                <agent_id of who robbed you>: {
+                    "time_step_<time step num>":{
+                        "if_success": true or false,
+                        "quantity":how much robbed if true, 
+                        "reason": very briefly why he robs you (as what he told to you or what you think),
+                        "target_moral_type":type 
+                    }
+                }
+            }
+            6. "Attack_History":{
+                <agent_id of who you attack>: {
+                    "time_step_<time step num>":{
+                        "if_success": true or false,
+                        "reason": very briefly why you attack, 
+                        "target_moral_type":type 
+                    }
+                }
+            }  
+            7. "Being_Attacked_History":{
+                <agent_id of who robbed you>: {
+                    "time_step_<time step num>":{
+                        "if_success": true or false,
+                        "reason": very briefly why he attacks you (as what he told to you or what you think),
+                        "target_moral_type":type 
+                    }
+                }
+            }
+            8. "agent_specific_memory":{
+                <agent_id>:{
+                    "moral_type": his moral type,
+                    "judgement": a brief judgement of him based on your interaction history or observation about him
+                    "relationship": you determination of his relationship with you, e.g family,ally, enemy, or other appropriate relationship
+                    "agreement": what you two agree or what's established as a norm between you two
+                    "plan" : what you plan to do about/with him next
+                }
+            }
+            ** Regarding family and reproduction **
+            9. "family_plan":{
+                agent_id : {
+                    "status": how he's doing,
+                    "plan" : what to do to/with him 
+                }
+            }
+            10. "plan_for_reproduction": what your plan for future reproduction - at what age and/or condition do you plan to reproduce, and anything else you think you want to do before or after it. *Vital field!*
+            ** Other **
+            11. "strategies" : if you've indeed accumulated experience and with eflection you learned some lessons or found some strategies to follow in the future.
+            
+    *   Strictly include all 11 fields. It no content applies, write "no content yet" explicitly. Always list these 11 fields items. 
+    *   Do *NOT* put information like numbers and locations about prey or plant, or inventory here. They are always observable. Putting them will only mislead you later.
+    *   Update plan content every step (append or revise). Don't get lazy, write fully. Remember, once you discard you won't get it back.
+    *   Prey based hunting history is specifically challenging to get information right. You need to pay extra attention.
+3.  **Short_term_plan**
+    Write what you plan for immediate steps forward. Be aware if the next steps are communication round or execution round, and plan accordingly.
+4.  **Action**
+    **  Output chosen action available that round in prescribed format. **
+

@@ -1,0 +1,4908 @@
+{
+  "at": "2026-10-17T10:11:30Z",
+  "method": "Post-hoc arithmetic/event audit of structured hunting memories.\n\nThis supplements the frozen participant anchors; it changes no inference, retry,\nor scoring threshold. Numeric disagreements are compared with executed actions.\nWhether third-party quantities were actually visible is separately left for\nreview. A single isolated redistribution is required before comparing amounts.\n",
+  "decisions_with_comparisons": 95,
+  "decisions_with_world_truth_mismatch": 39,
+  "finding_types": {
+    "redistribution_recipient_or_quantity_mismatch": 39,
+    "incorrect_kill_step": 9,
+    "incorrect_kill_winner": 6
+  },
+  "decisions": [
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_05\\agent_1\\decision.json",
+      "phase": "B",
+      "step": 5,
+      "agent_id": "agent_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 4,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 4
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_05\\agent_2\\decision.json",
+      "phase": "B",
+      "step": 5,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_05\\agent_3\\decision.json",
+      "phase": "B",
+      "step": 5,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 4,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_05\\agent_4\\decision.json",
+      "phase": "B",
+      "step": 5,
+      "agent_id": "agent_4",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 4,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 4,
+            "agent_3": 0
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_05\\agent_6\\decision.json",
+      "phase": "B",
+      "step": 5,
+      "agent_id": "agent_6",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 4,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 4
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_1\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 4,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 4
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_2\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_3\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 4,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_4\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_4",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 4,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 4,
+            "agent_3": 0
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_5\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_1",
+          "stated_hp": 10,
+          "actual": {
+            "recipient": "agent_1",
+            "planned_hp": 3,
+            "hp_before": 18,
+            "hp_after": 21,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 10,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 10,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 10,
+            "agent_2": 10,
+            "agent_4": 10
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_6\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_6",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_2",
+          "stated_hp": 3,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 4,
+            "hp_before": 14,
+            "hp_after": 18,
+            "received_hp": 4
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_80a5d203",
+          "recipient": "agent_4",
+          "stated_hp": 4,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 19,
+            "hp_after": 22,
+            "received_hp": 3
+          },
+          "allocation_step": 4,
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_4": 4
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\B\\decisions\\round_06\\agent_8\\decision.json",
+      "phase": "B",
+      "step": 6,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_80a5d203",
+          "kill": {
+            "step": 3,
+            "actor": "agent_3",
+            "prey": "prey_80a5d203",
+            "reward": 11,
+            "observation": "Step 3: Agent agent_3 killed prey prey_80a5d203 and gained 11 HP, current HP: 30"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": "part of 10 HP",
+            "agent_2": "part of 10 HP",
+            "agent_4": "part of 10 HP"
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 4,
+              "hp_before": 14,
+              "hp_after": 18,
+              "received_hp": 4
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_05\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 5,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_05\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 5,
+      "agent_id": "agent_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_05\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 5,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_05\\agent_4\\decision.json",
+      "phase": "L20261017",
+      "step": 5,
+      "agent_id": "agent_4",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_06\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 6,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_06\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 6,
+      "agent_id": "agent_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_06\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 6,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_07\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 7,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_07\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 7,
+      "agent_id": "agent_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_07\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 7,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_07\\agent_4\\decision.json",
+      "phase": "L20261017",
+      "step": 7,
+      "agent_id": "agent_4",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_08\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 8,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_08\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 8,
+      "agent_id": "agent_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_08\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 8,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_09\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 9,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_09\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 9,
+      "agent_id": "agent_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_09\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 9,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_09\\agent_4\\decision.json",
+      "phase": "L20261017",
+      "step": 9,
+      "agent_id": "agent_4",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_10\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 10,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_10\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 10,
+      "agent_id": "agent_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_10\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 10,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_10\\agent_4\\decision.json",
+      "phase": "L20261017",
+      "step": 10,
+      "agent_id": "agent_4",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_b56683f0",
+          "kill": {
+            "step": 3,
+            "actor": "agent_2",
+            "prey": "prey_b56683f0",
+            "reward": 12,
+            "observation": "Step 3: Agent agent_2 killed prey prey_b56683f0 and gained 12 HP, current HP: 31"
+          },
+          "allocation_step": 4,
+          "stated": {
+            "agent_1": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 18,
+              "hp_after": 21,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            }
+          }
+        },
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_10\\agent_4_1\\decision.json",
+      "phase": "L20261017",
+      "step": 10,
+      "agent_id": "agent_4_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_7b2d071d",
+          "kill": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          },
+          "allocation_step": 7,
+          "stated": {
+            "agent_1": 3,
+            "agent_2": 3,
+            "agent_3": 3,
+            "agent_4": 0
+          },
+          "actual_recipients": {
+            "agent_1": {
+              "recipient": "agent_1",
+              "planned_hp": 3,
+              "hp_before": 7,
+              "hp_after": 10,
+              "received_hp": 3
+            },
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 19,
+              "hp_after": 22,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 11,
+              "hp_after": 14,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_11\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 11,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_196c3730",
+          "recipient": "agent_5",
+          "stated_hp": 10,
+          "actual": null,
+          "allocation_step": 10,
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": 10
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_11\\agent_6\\decision.json",
+      "phase": "L20261017",
+      "step": 11,
+      "agent_id": "agent_6",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_11\\agent_7\\decision.json",
+      "phase": "L20261017",
+      "step": 11,
+      "agent_id": "agent_7",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_12\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 12,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_196c3730",
+          "recipient": "agent_5",
+          "stated_hp": 10,
+          "actual": null,
+          "allocation_step": 10,
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": 10
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_12\\agent_6\\decision.json",
+      "phase": "L20261017",
+      "step": 12,
+      "agent_id": "agent_6",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_12\\agent_7\\decision.json",
+      "phase": "L20261017",
+      "step": 12,
+      "agent_id": "agent_7",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_13\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 13,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_196c3730",
+          "recipient": "agent_5",
+          "stated_hp": 10,
+          "actual": null,
+          "allocation_step": 10,
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_196c3730",
+          "kill": {
+            "step": 6,
+            "actor": "agent_5",
+            "prey": "prey_196c3730",
+            "reward": 10,
+            "observation": "Step 6: Agent agent_5 killed prey prey_196c3730 and gained 10 HP, current HP: 33"
+          },
+          "allocation_step": 10,
+          "stated": {
+            "agent_5": 10
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 15,
+              "hp_before": 2,
+              "hp_after": 17,
+              "received_hp": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_14\\agent_1\\decision.json",
+      "phase": "L20261017",
+      "step": 14,
+      "agent_id": "agent_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_7b18c84b",
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "allocation_step": 13,
+          "stated": {
+            "agent_2": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 5,
+              "hp_after": 8,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 6,
+              "hp_after": 9,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 8,
+              "hp_after": 11,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_14\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 14,
+      "agent_id": "agent_3",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_7b18c84b",
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "allocation_step": 13,
+          "stated": {
+            "agent_2": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 5,
+              "hp_after": 8,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 6,
+              "hp_after": 9,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 8,
+              "hp_after": 11,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_14\\agent_3_1\\decision.json",
+      "phase": "L20261017",
+      "step": 14,
+      "agent_id": "agent_3_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_7b18c84b",
+          "recipient": "agent_2",
+          "stated_hp": 9,
+          "actual": {
+            "recipient": "agent_2",
+            "planned_hp": 3,
+            "hp_before": 5,
+            "hp_after": 8,
+            "received_hp": 3
+          },
+          "allocation_step": 13,
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_7b18c84b",
+          "recipient": "agent_3",
+          "stated_hp": 9,
+          "actual": {
+            "recipient": "agent_3",
+            "planned_hp": 3,
+            "hp_before": 6,
+            "hp_after": 9,
+            "received_hp": 3
+          },
+          "allocation_step": 13,
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        },
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_7b18c84b",
+          "recipient": "agent_4",
+          "stated_hp": 9,
+          "actual": {
+            "recipient": "agent_4",
+            "planned_hp": 3,
+            "hp_before": 8,
+            "hp_after": 11,
+            "received_hp": 3
+          },
+          "allocation_step": 13,
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_7b18c84b",
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "allocation_step": 13,
+          "stated": {
+            "agent_2": 9,
+            "agent_3": 9,
+            "agent_4": 9
+          },
+          "actual_recipients": {
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 5,
+              "hp_after": 8,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 6,
+              "hp_after": 9,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 8,
+              "hp_after": 11,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_14\\agent_4\\decision.json",
+      "phase": "L20261017",
+      "step": 14,
+      "agent_id": "agent_4",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_7b18c84b",
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "allocation_step": 13,
+          "stated": {
+            "agent_2": 3,
+            "agent_3": 3,
+            "agent_4": 3
+          },
+          "actual_recipients": {
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 5,
+              "hp_after": 8,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 6,
+              "hp_after": 9,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 8,
+              "hp_after": 11,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_14\\agent_6_1\\decision.json",
+      "phase": "L20261017",
+      "step": 14,
+      "agent_id": "agent_6_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_7b18c84b",
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "allocation_step": 13,
+          "stated": {
+            "agent_6_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 5,
+              "hp_after": 8,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 6,
+              "hp_after": 9,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 8,
+              "hp_after": 11,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_14\\agent_7_2\\decision.json",
+      "phase": "L20261017",
+      "step": 14,
+      "agent_id": "agent_7_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_7b18c84b",
+          "kill": {
+            "step": 12,
+            "actor": "agent_1",
+            "prey": "prey_7b18c84b",
+            "reward": 12,
+            "observation": "Step 12: Agent agent_1 killed prey prey_7b18c84b and gained 12 HP, current HP: 17"
+          },
+          "allocation_step": 13,
+          "stated": {
+            "agent_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_2": {
+              "recipient": "agent_2",
+              "planned_hp": 3,
+              "hp_before": 5,
+              "hp_after": 8,
+              "received_hp": 3
+            },
+            "agent_3": {
+              "recipient": "agent_3",
+              "planned_hp": 3,
+              "hp_before": 6,
+              "hp_after": 9,
+              "received_hp": 3
+            },
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 3,
+              "hp_before": 8,
+              "hp_after": 11,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_15\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 15,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_7b2d071d",
+          "stated": 7,
+          "actual": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_16\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 16,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_7b2d071d",
+          "stated": 7,
+          "actual": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_17\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 17,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_7b2d071d",
+          "stated": 7,
+          "actual": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_17\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 17,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_17\\agent_7_1\\decision.json",
+      "phase": "L20261017",
+      "step": 17,
+      "agent_id": "agent_7_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_17\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 17,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_18\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 18,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_7b2d071d",
+          "stated": 7,
+          "actual": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_18\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 18,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_18\\agent_7_1\\decision.json",
+      "phase": "L20261017",
+      "step": 18,
+      "agent_id": "agent_7_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_18\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 18,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_7b2d071d",
+          "stated": 7,
+          "actual": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          }
+        },
+        {
+          "kind": "incorrect_kill_winner",
+          "prey": "prey_539d5512",
+          "stated": "agent_5_1",
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        },
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_539d5512",
+          "stated": 15,
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_3\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_3",
+      "findings": [
+        {
+          "kind": "incorrect_kill_winner",
+          "prey": "prey_539d5512",
+          "stated": "unknown",
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_4_1\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_4_1",
+      "findings": [
+        {
+          "kind": "incorrect_kill_winner",
+          "prey": "prey_539d5512",
+          "stated": "unknown",
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_6_1\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_6_1",
+      "findings": [
+        {
+          "kind": "incorrect_kill_winner",
+          "prey": "prey_539d5512",
+          "stated": "unknown",
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_7_1\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_7_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_19\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 19,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_20\\agent_2\\decision.json",
+      "phase": "L20261017",
+      "step": 20,
+      "agent_id": "agent_2",
+      "findings": [
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_7b2d071d",
+          "stated": 7,
+          "actual": {
+            "step": 6,
+            "actor": "agent_4",
+            "prey": "prey_7b2d071d",
+            "reward": 12,
+            "observation": "Step 6: Agent agent_4 killed prey prey_7b2d071d and gained 12 HP, current HP: 33"
+          }
+        },
+        {
+          "kind": "incorrect_kill_winner",
+          "prey": "prey_539d5512",
+          "stated": "agent_5_1",
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        },
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_539d5512",
+          "stated": 15,
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_539d5512",
+          "kill": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          },
+          "allocation_step": 19,
+          "stated": {
+            "agent_3": "unallocated",
+            "agent_4": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 2,
+              "hp_before": 2,
+              "hp_after": 4,
+              "received_hp": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_20\\agent_4_1\\decision.json",
+      "phase": "L20261017",
+      "step": 20,
+      "agent_id": "agent_4_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_539d5512",
+          "kill": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          },
+          "allocation_step": 19,
+          "stated": {
+            "agent_3": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 2,
+              "hp_before": 2,
+              "hp_after": 4,
+              "received_hp": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_20\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 20,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_20\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 20,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        },
+        {
+          "prey": "prey_539d5512",
+          "kill": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          },
+          "allocation_step": 19,
+          "stated": {
+            "agent_3": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_4": {
+              "recipient": "agent_4",
+              "planned_hp": 2,
+              "hp_before": 2,
+              "hp_after": 4,
+              "received_hp": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_21\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 21,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_21\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 21,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_22\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 22,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_22\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 22,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_23\\agent_4\\decision.json",
+      "phase": "L20261017",
+      "step": 23,
+      "agent_id": "agent_4",
+      "findings": [
+        {
+          "kind": "incorrect_kill_winner",
+          "prey": "prey_539d5512",
+          "stated": "agent_5_1",
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        },
+        {
+          "kind": "incorrect_kill_step",
+          "prey": "prey_539d5512",
+          "stated": 15,
+          "actual": {
+            "step": 18,
+            "actor": "agent_3",
+            "prey": "prey_539d5512",
+            "reward": 13,
+            "observation": "Step 18: Agent agent_3 killed prey prey_539d5512 and gained 13 HP, current HP: 13"
+          }
+        }
+      ],
+      "comparisons": []
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_23\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 23,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_23\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 23,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_24\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 24,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_24\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 24,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_25\\agent_3_1\\decision.json",
+      "phase": "L20261017",
+      "step": 25,
+      "agent_id": "agent_3_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_25\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 25,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_25\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 25,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_26\\agent_3_1\\decision.json",
+      "phase": "L20261017",
+      "step": 26,
+      "agent_id": "agent_3_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_26\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 26,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_c71dfb3f",
+          "recipient": "agent_5",
+          "stated_hp": 12,
+          "actual": null,
+          "allocation_step": 25,
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_c71dfb3f",
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "allocation_step": 25,
+          "stated": {
+            "agent_5": 12
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 3,
+              "hp_before": 9,
+              "hp_after": 12,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_26\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 26,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_26\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 26,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_27\\agent_3_1\\decision.json",
+      "phase": "L20261017",
+      "step": 27,
+      "agent_id": "agent_3_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_27\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 27,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_c71dfb3f",
+          "recipient": "agent_5",
+          "stated_hp": 12,
+          "actual": null,
+          "allocation_step": 25,
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_c71dfb3f",
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "allocation_step": 25,
+          "stated": {
+            "agent_5": 12
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 3,
+              "hp_before": 9,
+              "hp_after": 12,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_27\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 27,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_27\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 27,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_28\\agent_3_1\\decision.json",
+      "phase": "L20261017",
+      "step": 28,
+      "agent_id": "agent_3_1",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_28\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 28,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_c71dfb3f",
+          "recipient": "agent_5",
+          "stated_hp": 12,
+          "actual": null,
+          "allocation_step": 25,
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_c71dfb3f",
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "allocation_step": 25,
+          "stated": {
+            "agent_5": 12
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 3,
+              "hp_before": 9,
+              "hp_after": 12,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_28\\agent_5_1\\decision.json",
+      "phase": "L20261017",
+      "step": 28,
+      "agent_id": "agent_5_1",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_2b0c66ff",
+          "recipient": "agent_5_1",
+          "stated_hp": 11,
+          "actual": null,
+          "allocation_step": 16,
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": 11
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_28\\agent_5_2\\decision.json",
+      "phase": "L20261017",
+      "step": 28,
+      "agent_id": "agent_5_2",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5": 5
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_28\\agent_8\\decision.json",
+      "phase": "L20261017",
+      "step": 28,
+      "agent_id": "agent_8",
+      "findings": [],
+      "comparisons": [
+        {
+          "prey": "prey_2b0c66ff",
+          "kill": {
+            "step": 15,
+            "actor": "agent_5_1",
+            "prey": "prey_2b0c66ff",
+            "reward": 11,
+            "observation": "Step 15: Agent agent_5_1 killed prey prey_2b0c66ff and gained 11 HP, current HP: 18"
+          },
+          "allocation_step": 16,
+          "stated": {
+            "agent_5_1": "unallocated"
+          },
+          "actual_recipients": {
+            "agent_5": {
+              "recipient": "agent_5",
+              "planned_hp": 5,
+              "hp_before": 7,
+              "hp_after": 12,
+              "received_hp": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "decision": "data\\qwen38_remediation_v2_20261016\\L20261017\\decisions\\round_29\\agent_5\\decision.json",
+      "phase": "L20261017",
+      "step": 29,
+      "agent_id": "agent_5",
+      "findings": [
+        {
+          "kind": "redistribution_recipient_or_quantity_mismatch",
+          "prey": "prey_c71dfb3f",
+          "recipient": "agent_5",
+          "stated_hp": 12,
+          "actual": null,
+          "allocation_step": 25,
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "visibility_judgment": "pending: inspect original prompt for third-party quantities"
+        }
+      ],
+      "comparisons": [
+        {
+          "prey": "prey_c71dfb3f",
+          "kill": {
+            "step": 24,
+            "actor": "agent_5",
+            "prey": "prey_c71dfb3f",
+            "reward": 12,
+            "observation": "Step 24: Agent agent_5 killed prey prey_c71dfb3f and gained 12 HP, current HP: 18"
+          },
+          "allocation_step": 25,
+          "stated": {
+            "agent_5": 12
+          },
+          "actual_recipients": {
+            "agent_5_1": {
+              "recipient": "agent_5_1",
+              "planned_hp": 3,
+              "hp_before": 9,
+              "hp_after": 12,
+              "received_hp": 3
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

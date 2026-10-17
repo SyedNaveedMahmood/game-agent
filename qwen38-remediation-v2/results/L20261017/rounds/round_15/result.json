@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "round": 15,
+  "mode": "off",
+  "environment_seed": 20261017,
+  "decisions": 14,
+  "actions": {
+    "do_nothing": 4,
+    "hunt": 8,
+    "reproduce": 1
+  },
+  "intended_actions": {
+    "do_nothing": 4,
+    "hunt": 9,
+    "reproduce": 1
+  },
+  "actions_by_type": {
+    "universal_group_focused_moral": {
+      "do_nothing": 2,
+      "hunt": 1
+    },
+    "reciprocal_group_focused_moral": {
+      "hunt": 3,
+      "do_nothing": 1
+    },
+    "kin_focused_moral": {
+      "hunt": 2,
+      "reproduce": 1,
+      "do_nothing": 1
+    },
+    "reproductive_selfish": {
+      "hunt": 2
+    }
+  },
+  "population_by_type": {
+    "universal_group_focused_moral": 2,
+    "reciprocal_group_focused_moral": 4,
+    "kin_focused_moral": 5,
+    "reproductive_selfish": 3
+  },
+  "stale_or_unconfirmed_execution": 1,
+  "offered_hp": 0,
+  "actual_hp_received": 0,
+  "allocation_actions": 0,
+  "population_before": 14,
+  "population_after": 14,
+  "births": [
+    "agent_6_2"
+  ],
+  "removed_or_dead": [
+    "agent_2_1"
+  ],
+  "checkpoint_integrity": {
+    "unique_agent_ids": true,
+    "independent_memory_objects": true,
+    "independent_ltm_objects": true,
+    "hp_bounds": true,
+    "queue_matches_living": true,
+    "family_links": true
+  },
+  "checkpoint_reload_verified": true,
+  "private_memory_leak_events": 0,
+  "elapsed_seconds": 3171.6643958091736,
+  "completed_at": "2026-10-16T23:23:40Z"
+}

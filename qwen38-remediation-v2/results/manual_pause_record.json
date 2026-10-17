@@ -1,0 +1,96 @@
+{
+  "paused_at_utc": "2026-10-17T10:08:54Z",
+  "requested_by": "user",
+  "reason": "Immediate pause during first longitudinal seed",
+  "phase": "L20261017",
+  "unit": "round 30/30",
+  "round_30_committed": false,
+  "completed_rounds": 29,
+  "runner_processes_stopped": [
+    33584,
+    9236,
+    9876
+  ],
+  "pause_watcher_stopped": 31324,
+  "llama_server_stopped": 6232,
+  "decision_units": [
+    {
+      "agent": "agent_1_1",
+      "attempts": 2,
+      "status": "complete",
+      "latest_call": "attempt_02_reflection_seq_004_1792230538803757800_response.json",
+      "latest_call_time": "/Date(1792230614051)/"
+    },
+    {
+      "agent": "agent_3",
+      "attempts": 1,
+      "status": "complete",
+      "latest_call": "attempt_01_reflection_seq_002_1792229999537609300_response.json",
+      "latest_call_time": "/Date(1792230056555)/"
+    },
+    {
+      "agent": "agent_3_1",
+      "attempts": 1,
+      "status": "complete",
+      "latest_call": "attempt_01_reflection_seq_002_1792230690700521200_response.json",
+      "latest_call_time": "/Date(1792230762439)/"
+    },
+    {
+      "agent": "agent_3_1_1",
+      "attempts": 1,
+      "status": null,
+      "latest_call": "attempt_01_first_stage_seq_001_1792231692007928200_request.json",
+      "latest_call_time": "/Date(1792231692036)/"
+    },
+    {
+      "agent": "agent_4_1",
+      "attempts": 1,
+      "status": "complete",
+      "latest_call": "attempt_01_reflection_seq_002_1792230876334612500_response.json",
+      "latest_call_time": "/Date(1792230985712)/"
+    },
+    {
+      "agent": "agent_5",
+      "attempts": 1,
+      "status": "complete",
+      "latest_call": "attempt_01_reflection_seq_002_1792230131940093900_response.json",
+      "latest_call_time": "/Date(1792230201214)/"
+    },
+    {
+      "agent": "agent_5_1",
+      "attempts": 2,
+      "status": "complete",
+      "latest_call": "attempt_02_reflection_seq_004_1792231274007797400_response.json",
+      "latest_call_time": "/Date(1792231378973)/"
+    },
+    {
+      "agent": "agent_5_2",
+      "attempts": 2,
+      "status": "complete",
+      "latest_call": "attempt_02_reflection_seq_004_1792231632995919800_response.json",
+      "latest_call_time": "/Date(1792231691944)/"
+    },
+    {
+      "agent": "agent_6_2",
+      "attempts": 1,
+      "status": "complete",
+      "latest_call": "attempt_01_reflection_seq_002_1792231439134151200_response.json",
+      "latest_call_time": "/Date(1792231496322)/"
+    },
+    {
+      "agent": "agent_8",
+      "attempts": 1,
+      "status": "complete",
+      "latest_call": "attempt_01_reflection_seq_002_1792230259171591600_response.json",
+      "latest_call_time": "/Date(1792230377031)/"
+    }
+  ],
+  "evidence_preserved": [
+    "round_30/before.json",
+    "round_30/before_rng.json",
+    "decisions/round_30/*/calls/*_request.json",
+    "completed decision caches and prior rounds"
+  ],
+  "progress_state_saved_at_utc": "2026-10-17T10:09:12Z",
+  "runner_supervisor_watcher_llama_server": "stopped and verified absent after stop"
+}

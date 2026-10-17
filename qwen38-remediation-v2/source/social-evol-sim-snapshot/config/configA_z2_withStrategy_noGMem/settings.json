@@ -1,0 +1,82 @@
+{
+  "simulation": {
+    "name": "SiliconFlowAPITest",
+    "version": "1.0",
+    "description": "Test strategy implementation without global memory"
+  },
+
+  "world": {
+    "max_life_steps": 60
+  },
+
+  "agent": {
+    "initial_count": 2,
+    "ratio": {
+      "moral": 0,
+      "immoral": 1
+    },
+    "view": {
+      "show_other_agent_type": true,
+      "visible_steps": 3
+    },
+
+    "hp": {
+      "initial": 45,
+      "max": 60
+    },
+
+    "age": {
+      "initial": 10,
+      "max": 100
+    },
+
+    "inventory": {
+      "max_size": 10,
+      "initial": {
+        "meat": 1,
+        "plant": 2
+      }
+    },
+
+    "reproduction": {
+      "min_hp": 11,
+      "hp_cost": 10,
+      "min_age": 4,
+      "offspring_initial_hp": 3
+    },
+
+    "attack": {
+      "power": {
+        "mean": 5,
+        "sd": 2.5
+      }
+    },
+
+    "max_collect_quantity": 2
+  },
+
+  "resource": {
+    "plant": {
+      "initial_quantity": 1,
+      "capacity": 5,
+      "respawn_delay": 10,
+      "nutrition": 3
+    },
+    "prey": {
+      "initial_quantity": 3,
+      "hp": 4,
+      "attack": 1,
+      "respawn_rate": 0.1,
+      "meat_unit_hp": 2,
+      "nutrition": 6,
+      "max_quantity": 4
+    }
+  },
+
+
+  "llm": {
+    "provider": "tongyuan",
+    "chat_model": "o4-mini-2025-04-16",
+    "max_retries": 2
+  }
+}

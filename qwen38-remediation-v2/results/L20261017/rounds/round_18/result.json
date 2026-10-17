@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "round": 18,
+  "mode": "off",
+  "environment_seed": 20261017,
+  "decisions": 14,
+  "actions": {
+    "collect": 3,
+    "hunt": 1
+  },
+  "intended_actions": {
+    "collect": 10,
+    "hunt": 4
+  },
+  "actions_by_type": {
+    "universal_group_focused_moral": {
+      "collect": 1
+    },
+    "reciprocal_group_focused_moral": {
+      "hunt": 1
+    },
+    "kin_focused_moral": {
+      "collect": 2
+    },
+    "reproductive_selfish": {}
+  },
+  "population_by_type": {
+    "universal_group_focused_moral": 2,
+    "reciprocal_group_focused_moral": 4,
+    "kin_focused_moral": 5,
+    "reproductive_selfish": 2
+  },
+  "stale_or_unconfirmed_execution": 10,
+  "offered_hp": 0,
+  "actual_hp_received": 0,
+  "allocation_actions": 0,
+  "population_before": 14,
+  "population_after": 13,
+  "births": [],
+  "removed_or_dead": [
+    "agent_7_2"
+  ],
+  "checkpoint_integrity": {
+    "unique_agent_ids": true,
+    "independent_memory_objects": true,
+    "independent_ltm_objects": true,
+    "hp_bounds": true,
+    "queue_matches_living": true,
+    "family_links": true
+  },
+  "checkpoint_reload_verified": true,
+  "private_memory_leak_events": 0,
+  "elapsed_seconds": 2647.766337633133,
+  "completed_at": "2026-10-17T02:22:38Z"
+}

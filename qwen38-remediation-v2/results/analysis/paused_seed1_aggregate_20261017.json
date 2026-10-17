@@ -1,0 +1,819 @@
+{
+  "created_at_utc": "2026-10-17T10:13:40.658463+00:00",
+  "seed": "20261017",
+  "committed_rounds": 29,
+  "planned_rounds": 30,
+  "round_30_committed": false,
+  "round_30_partial_decisions": [
+    {
+      "agent": "agent_1_1",
+      "attempts": 2,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_3",
+      "attempts": 1,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_3_1",
+      "attempts": 1,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_3_1_1",
+      "attempts": 1,
+      "status": "incomplete_paused"
+    },
+    {
+      "agent": "agent_4_1",
+      "attempts": 1,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_5",
+      "attempts": 1,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_5_1",
+      "attempts": 2,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_5_2",
+      "attempts": 2,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_6_2",
+      "attempts": 1,
+      "status": "complete"
+    },
+    {
+      "agent": "agent_8",
+      "attempts": 1,
+      "status": "complete"
+    }
+  ],
+  "wall_runtime_rounds_1_29_seconds": 70754.5204217434,
+  "wall_runtime_rounds_1_29_hours": 19.654,
+  "committed_decisions": {
+    "decision_units": 336,
+    "eventual_action_valid": 336,
+    "first_pipeline_valid": 280,
+    "final_memory_structure_valid": 75,
+    "fact_hits": 355,
+    "fact_total": 1029,
+    "validation_retries": 73,
+    "possible_silent_truncations": 0
+  },
+  "round30_completed_decisions": {
+    "decision_units": 9,
+    "eventual_action_valid": 9,
+    "first_pipeline_valid": 6,
+    "final_memory_structure_valid": 3,
+    "fact_hits": 12,
+    "fact_total": 66,
+    "validation_retries": 3,
+    "possible_silent_truncations": 0
+  },
+  "executed_actions": {
+    "communicate": 107,
+    "do_nothing": 50,
+    "hunt": 19,
+    "collect": 11,
+    "reproduce": 11,
+    "allocate": 43,
+    "rob": 33
+  },
+  "intended_actions": {
+    "communicate": 113,
+    "do_nothing": 50,
+    "hunt": 38,
+    "collect": 46,
+    "reproduce": 11,
+    "allocate": 43,
+    "rob": 35
+  },
+  "stale_or_unconfirmed_executions": 62,
+  "actual_hp_received": 178,
+  "offered_hp": 178,
+  "allocation_actions": 43,
+  "committed_round_rows": [
+    {
+      "round": 1,
+      "elapsed_seconds": 987.5534348487854,
+      "decisions": 8,
+      "actions": {
+        "communicate": 4,
+        "do_nothing": 4
+      },
+      "intended_actions": {
+        "communicate": 4,
+        "do_nothing": 4
+      },
+      "stale": 0,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 8,
+      "population_after": 8,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 2,
+      "elapsed_seconds": 1030.9663381576538,
+      "decisions": 8,
+      "actions": {
+        "communicate": 5,
+        "do_nothing": 3
+      },
+      "intended_actions": {
+        "communicate": 5,
+        "do_nothing": 3
+      },
+      "stale": 0,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 8,
+      "population_after": 8,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 3,
+      "elapsed_seconds": 1116.1573317050934,
+      "decisions": 8,
+      "actions": {
+        "hunt": 3,
+        "collect": 1,
+        "reproduce": 1
+      },
+      "intended_actions": {
+        "hunt": 5,
+        "collect": 2,
+        "reproduce": 1
+      },
+      "stale": 3,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 8,
+      "population_after": 9,
+      "births": 1,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 4,
+      "elapsed_seconds": 1313.7928795814514,
+      "decisions": 9,
+      "actions": {
+        "communicate": 5,
+        "allocate": 1,
+        "do_nothing": 3
+      },
+      "intended_actions": {
+        "communicate": 5,
+        "allocate": 1,
+        "do_nothing": 3
+      },
+      "stale": 0,
+      "actual_hp_received": 9,
+      "offered_hp": 9,
+      "population_before": 9,
+      "population_after": 9,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 5,
+      "elapsed_seconds": 1501.805354833603,
+      "decisions": 9,
+      "actions": {
+        "communicate": 5,
+        "rob": 1,
+        "do_nothing": 3
+      },
+      "intended_actions": {
+        "communicate": 5,
+        "rob": 1,
+        "do_nothing": 3
+      },
+      "stale": 0,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 9,
+      "population_after": 9,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 6,
+      "elapsed_seconds": 1356.4989731311798,
+      "decisions": 9,
+      "actions": {
+        "reproduce": 2,
+        "hunt": 3,
+        "collect": 3
+      },
+      "intended_actions": {
+        "reproduce": 2,
+        "hunt": 4,
+        "collect": 3
+      },
+      "stale": 1,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 9,
+      "population_after": 11,
+      "births": 2,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 7,
+      "elapsed_seconds": 1934.1397075653076,
+      "decisions": 11,
+      "actions": {
+        "allocate": 2,
+        "communicate": 5,
+        "do_nothing": 2,
+        "rob": 2
+      },
+      "intended_actions": {
+        "allocate": 2,
+        "communicate": 5,
+        "do_nothing": 2,
+        "rob": 2
+      },
+      "stale": 0,
+      "actual_hp_received": 12,
+      "offered_hp": 12,
+      "population_before": 11,
+      "population_after": 11,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 8,
+      "elapsed_seconds": 2379.0374147892,
+      "decisions": 11,
+      "actions": {
+        "communicate": 5,
+        "allocate": 1,
+        "do_nothing": 3,
+        "rob": 2
+      },
+      "intended_actions": {
+        "communicate": 5,
+        "allocate": 1,
+        "do_nothing": 3,
+        "rob": 2
+      },
+      "stale": 0,
+      "actual_hp_received": 2,
+      "offered_hp": 2,
+      "population_before": 11,
+      "population_after": 11,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 9,
+      "elapsed_seconds": 1898.3083732128143,
+      "decisions": 11,
+      "actions": {
+        "collect": 1,
+        "reproduce": 5,
+        "hunt": 1
+      },
+      "intended_actions": {
+        "collect": 5,
+        "reproduce": 5,
+        "hunt": 1
+      },
+      "stale": 4,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 11,
+      "population_after": 16,
+      "births": 5,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 10,
+      "elapsed_seconds": 3132.784536600113,
+      "decisions": 16,
+      "actions": {
+        "allocate": 5,
+        "communicate": 7,
+        "do_nothing": 2,
+        "rob": 2
+      },
+      "intended_actions": {
+        "allocate": 5,
+        "communicate": 7,
+        "do_nothing": 2,
+        "rob": 2
+      },
+      "stale": 0,
+      "actual_hp_received": 34,
+      "offered_hp": 34,
+      "population_before": 16,
+      "population_after": 16,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 11,
+      "elapsed_seconds": 3431.3866975307465,
+      "decisions": 16,
+      "actions": {
+        "communicate": 8,
+        "allocate": 2,
+        "rob": 3,
+        "do_nothing": 3
+      },
+      "intended_actions": {
+        "communicate": 8,
+        "allocate": 2,
+        "rob": 3,
+        "do_nothing": 3
+      },
+      "stale": 0,
+      "actual_hp_received": 13,
+      "offered_hp": 13,
+      "population_before": 16,
+      "population_after": 16,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 12,
+      "elapsed_seconds": 3153.5422928333282,
+      "decisions": 16,
+      "actions": {
+        "hunt": 1,
+        "do_nothing": 3
+      },
+      "intended_actions": {
+        "hunt": 13,
+        "do_nothing": 3
+      },
+      "stale": 12,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 16,
+      "population_after": 15,
+      "births": 0,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 13,
+      "elapsed_seconds": 3224.1211647987366,
+      "decisions": 15,
+      "actions": {
+        "allocate": 5,
+        "communicate": 5,
+        "rob": 2,
+        "do_nothing": 2
+      },
+      "intended_actions": {
+        "allocate": 5,
+        "communicate": 5,
+        "rob": 3,
+        "do_nothing": 2
+      },
+      "stale": 1,
+      "actual_hp_received": 23,
+      "offered_hp": 23,
+      "population_before": 15,
+      "population_after": 15,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 14,
+      "elapsed_seconds": 4272.156812906265,
+      "decisions": 15,
+      "actions": {
+        "allocate": 3,
+        "communicate": 3,
+        "rob": 4,
+        "do_nothing": 2
+      },
+      "intended_actions": {
+        "allocate": 3,
+        "communicate": 6,
+        "rob": 4,
+        "do_nothing": 2
+      },
+      "stale": 3,
+      "actual_hp_received": 10,
+      "offered_hp": 10,
+      "population_before": 15,
+      "population_after": 14,
+      "births": 0,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 15,
+      "elapsed_seconds": 3171.6643958091736,
+      "decisions": 14,
+      "actions": {
+        "do_nothing": 4,
+        "hunt": 8,
+        "reproduce": 1
+      },
+      "intended_actions": {
+        "do_nothing": 4,
+        "hunt": 9,
+        "reproduce": 1
+      },
+      "stale": 1,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 14,
+      "population_after": 14,
+      "births": 1,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 16,
+      "elapsed_seconds": 4751.402439117432,
+      "decisions": 14,
+      "actions": {
+        "communicate": 8,
+        "allocate": 2,
+        "do_nothing": 2,
+        "rob": 2
+      },
+      "intended_actions": {
+        "communicate": 8,
+        "allocate": 2,
+        "do_nothing": 2,
+        "rob": 2
+      },
+      "stale": 0,
+      "actual_hp_received": 7,
+      "offered_hp": 7,
+      "population_before": 14,
+      "population_after": 14,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 17,
+      "elapsed_seconds": 3331.4079413414,
+      "decisions": 14,
+      "actions": {
+        "communicate": 5,
+        "allocate": 3,
+        "do_nothing": 3,
+        "rob": 3
+      },
+      "intended_actions": {
+        "communicate": 5,
+        "allocate": 3,
+        "do_nothing": 3,
+        "rob": 3
+      },
+      "stale": 0,
+      "actual_hp_received": 5,
+      "offered_hp": 5,
+      "population_before": 14,
+      "population_after": 14,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 18,
+      "elapsed_seconds": 2647.766337633133,
+      "decisions": 14,
+      "actions": {
+        "collect": 3,
+        "hunt": 1
+      },
+      "intended_actions": {
+        "collect": 10,
+        "hunt": 4
+      },
+      "stale": 10,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 14,
+      "population_after": 13,
+      "births": 0,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 19,
+      "elapsed_seconds": 3379.542218208313,
+      "decisions": 13,
+      "actions": {
+        "communicate": 6,
+        "allocate": 3,
+        "rob": 3,
+        "do_nothing": 1
+      },
+      "intended_actions": {
+        "communicate": 6,
+        "allocate": 3,
+        "rob": 3,
+        "do_nothing": 1
+      },
+      "stale": 0,
+      "actual_hp_received": 5,
+      "offered_hp": 5,
+      "population_before": 13,
+      "population_after": 12,
+      "births": 0,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 20,
+      "elapsed_seconds": 3191.6630828380585,
+      "decisions": 12,
+      "actions": {
+        "communicate": 3,
+        "allocate": 3,
+        "do_nothing": 3,
+        "rob": 1
+      },
+      "intended_actions": {
+        "communicate": 5,
+        "allocate": 3,
+        "do_nothing": 3,
+        "rob": 1
+      },
+      "stale": 2,
+      "actual_hp_received": 7,
+      "offered_hp": 7,
+      "population_before": 12,
+      "population_after": 11,
+      "births": 0,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 21,
+      "elapsed_seconds": 2066.3185765743256,
+      "decisions": 11,
+      "actions": {
+        "collect": 1,
+        "hunt": 1
+      },
+      "intended_actions": {
+        "collect": 10,
+        "hunt": 1
+      },
+      "stale": 9,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 11,
+      "population_after": 11,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 22,
+      "elapsed_seconds": 2574.310825109482,
+      "decisions": 11,
+      "actions": {
+        "allocate": 2,
+        "communicate": 7,
+        "rob": 1,
+        "do_nothing": 1
+      },
+      "intended_actions": {
+        "allocate": 2,
+        "communicate": 7,
+        "rob": 1,
+        "do_nothing": 1
+      },
+      "stale": 0,
+      "actual_hp_received": 5,
+      "offered_hp": 5,
+      "population_before": 11,
+      "population_after": 11,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 23,
+      "elapsed_seconds": 2052.1310567855835,
+      "decisions": 11,
+      "actions": {
+        "allocate": 3,
+        "communicate": 5,
+        "rob": 1,
+        "do_nothing": 1
+      },
+      "intended_actions": {
+        "allocate": 3,
+        "communicate": 6,
+        "rob": 1,
+        "do_nothing": 1
+      },
+      "stale": 1,
+      "actual_hp_received": 6,
+      "offered_hp": 6,
+      "population_before": 11,
+      "population_after": 10,
+      "births": 0,
+      "deaths_or_removals": 1,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 24,
+      "elapsed_seconds": 1611.6067426204681,
+      "decisions": 10,
+      "actions": {
+        "collect": 1,
+        "hunt": 1
+      },
+      "intended_actions": {
+        "collect": 9,
+        "hunt": 1
+      },
+      "stale": 8,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 10,
+      "population_after": 10,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 25,
+      "elapsed_seconds": 1911.5306069850922,
+      "decisions": 10,
+      "actions": {
+        "allocate": 2,
+        "communicate": 6,
+        "rob": 2
+      },
+      "intended_actions": {
+        "allocate": 2,
+        "communicate": 6,
+        "rob": 2
+      },
+      "stale": 0,
+      "actual_hp_received": 8,
+      "offered_hp": 8,
+      "population_before": 10,
+      "population_after": 10,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 26,
+      "elapsed_seconds": 2548.6873869895935,
+      "decisions": 10,
+      "actions": {
+        "communicate": 6,
+        "rob": 2,
+        "do_nothing": 1,
+        "allocate": 1
+      },
+      "intended_actions": {
+        "communicate": 6,
+        "rob": 2,
+        "do_nothing": 1,
+        "allocate": 1
+      },
+      "stale": 0,
+      "actual_hp_received": 2,
+      "offered_hp": 2,
+      "population_before": 10,
+      "population_after": 10,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 27,
+      "elapsed_seconds": 1806.834634065628,
+      "decisions": 10,
+      "actions": {
+        "collect": 1,
+        "reproduce": 2,
+        "do_nothing": 1
+      },
+      "intended_actions": {
+        "collect": 7,
+        "reproduce": 2,
+        "do_nothing": 1
+      },
+      "stale": 6,
+      "actual_hp_received": 0,
+      "offered_hp": 0,
+      "population_before": 10,
+      "population_after": 10,
+      "births": 2,
+      "deaths_or_removals": 2,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 28,
+      "elapsed_seconds": 2781.036568880081,
+      "decisions": 10,
+      "actions": {
+        "allocate": 2,
+        "do_nothing": 2,
+        "rob": 1,
+        "communicate": 5
+      },
+      "intended_actions": {
+        "allocate": 2,
+        "do_nothing": 2,
+        "rob": 1,
+        "communicate": 5
+      },
+      "stale": 0,
+      "actual_hp_received": 18,
+      "offered_hp": 18,
+      "population_before": 10,
+      "population_after": 10,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    },
+    {
+      "round": 29,
+      "elapsed_seconds": 2196.3662962913513,
+      "decisions": 10,
+      "actions": {
+        "communicate": 4,
+        "allocate": 3,
+        "do_nothing": 1,
+        "rob": 1
+      },
+      "intended_actions": {
+        "communicate": 4,
+        "allocate": 3,
+        "rob": 2,
+        "do_nothing": 1
+      },
+      "stale": 1,
+      "actual_hp_received": 12,
+      "offered_hp": 12,
+      "population_before": 10,
+      "population_after": 10,
+      "births": 0,
+      "deaths_or_removals": 0,
+      "checkpoint_reload_verified": true,
+      "memory_leaks": 0
+    }
+  ]
+}

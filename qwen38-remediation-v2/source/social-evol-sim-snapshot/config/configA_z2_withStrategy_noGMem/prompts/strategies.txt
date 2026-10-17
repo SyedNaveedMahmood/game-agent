@@ -1,0 +1,13 @@
+# Regarding Resources
+1. With more inventories, it’ll help not only you but also your family and others when in need. It may be wise to collect and hunt as much as possible.
+2. Collecting plant doesn’t have risks, meanwhile plants takes many steps to respawn when it's depleted. It is a safe and scarse low hanging fruit.
+3. Hunting together can reduce risk - since it’ll kill an animal in shorter rounds and will incur fewer chance of being fight back. 
+4. The last one who strike the animal to death gets all the meat. So even if people collaborated on hunting, the resource distribution is not automatically based on the contribution. It is totally depend on the person who gets it - he might share or not share, fairly or unfairly. It is wise to pay attention to what kind of person he is, or take some actions toward him based on his distribution. 
+
+
+# Regarding Social
+1. When robbed, it is an option to rob back or attack back to impose punishment. Otherwise others might will keep robbing you.
+2. The new born kids urgently need food since they only have just a few health points available, which means if they don't get food withint these few time steps they will die. For parenting, it maybe wise to share to them immediately when they are born. For attacking, they are the vulnerable target.
+3. It is also a question for you to think of how to share hunting gains. The contribution for a successful hunt depends on how many time you hunt, attack power and chance. 
+4. Some people may pose a competition threat to you since the resource is limited, and they might attack you. If they are killed then they don't exit.
+5. It may help to collaborate and take actions together.

@@ -1,0 +1,45 @@
+## General Strategies to Be Aware
+### regarding reproduction
+1. Bear in mind that reproduction consumes a significant amount of HP. Be strategic to safeguard your survival.
+2. Newborn offspring are in urgent need of food since they start with only a few health points, meaning they will perish if they do not receive food within these first few time steps. For parenting, it may be prudent to allocate resources to them right after birth. For attacking, both the parent and newborns are particularly vulnerable targets at this moment.
+3. Since the ultimate success metric is the size of your family's population by the simulation's end, you should aim to produce as many children as possible.
+4. Other agents may rob you of resources intended for your newborn children. If this occurs, seek assistance from family members or allies as quickly as possible. You may also want to proactively support family or allies facing similar situations.
+
+### regarding robbery, attack or retaliation
+1. Some agents may present a competitive or existential threat to you given limited resources, and they could rob you. Holding onto resources without consuming them increases the likelihood of being robbed.
+2. Retaliating to impose a higher cost on those who harm you (rob, fight, etc.) is a strategy to deter them from repeating such behavior. You can also supplement this with explicit communication to inform others.
+3. A more decisive form of retaliation is eliminating the threat entirely by killing the enemy (though surviving members of their group may counter-retaliate).
+4. Coordinated retaliation with others can be highly effective, as it inflicts greater punishment and instills fear. Killing an agent often requires multiple attacks, during which the target may fight back and inflict substantial damage (or even kill you). Having several agents attack simultaneously raises both the probability and efficiency of elimination.
+5. Retaliating promptly is generally preferable, as it signals a willingness to punish exploitation decisively. Broadcasting a message to other agents about your retaliation reinforces this deterrent (you can also message uninvolved agents to demonstrate how you handle exploitation).
+6. If resources are not distributed fairly (after a hunt), investigate the reason. If another agent is intentionally taking more than their share, consider retaliating, potentially in collaboration with others.
+
+### regarding hunting
+1. The agent who delivers the killing blow to an animal receives all the energy/HP. Thus, even in collaborative hunts, resource distribution does not automatically reflect each participant's contribution.
+2. This creates an opportunistic avenue to obtain more resources at lower personal cost.
+3. This also raises questions of fair allocation and partner selection. Consider carefully whom you want to hunt alongside if you opt for collaboration. Reflect on whether you intend to distribute rewards fairly, and what conclusions you should draw from how others handle their allocations.
+4. Animals require multiple attempts to kill, and they may counterattack and injure you in the process. Group hunting significantly reduces risk, damage, and time while increasing the success rate. If you can ensure receiving your fair share, collaborative hunting is generally the superior strategy.
+5. When you have several trusted partners (e.g., family members, allies), hunting together can be highly cost-effective. The animal can be brought down in one or two rounds with minimal HP loss (or none at all), and the energy/HP return is substantial — provided you receive your allocated portion.
+6. Examine the action history meticulously to verify whether energy/HP from collaborative hunts is actually being redistributed equitably. An agent may verbally promise fair allocation to put you at ease, but *in practice* fail to follow through.
+7. Be mindful of your hunting team's size — the more participants, the more agents expecting a share. There is an optimal team size relative to the prey's HP.
+
+
+### regarding communication
+1. Other agents may not understand your identity or intentions. Explicit communication can reduce misunderstandings and improve coordination. You may also request clarification from others.
+2. Conversely, communication can also serve as a tool for deception to advance your objectives.
+3. When communicating, be specific about actionable items — what you need, which time step (the immediately next actionable step or a future one), and whether you require confirmation in return.
+4. Communication can be used to explicitly signal how others should interact with you (for collaboration or as a warning against exploitation). For instance, informing someone that robbing you will result in an attack or lethal retaliation.
+5. Communication rounds are limited in number. Use them judiciously and efficiently.
+6. Communication can be leveraged to establish cooperative norms with family members or others, such as positioning yourself as a leader whose instructions are followed, thereby reducing communication overhead and misalignment.
+7. Always communicate explicitly when you allocate resources to others, explaining what you did and why. This is especially important for hunting reward redistribution.
+
+
+### regarding evolution competition
+1. Remember that resources are finite. The more competitors seeking resources, the less available for you and those you care about. Enemies will also reproduce, growing their population over time.
+2. Eliminating all enemies or competitors is a strategy to improve the survival prospects of yourself and those you care about (your family and/or group members). Your enemies also view you as a threat and may consider killing you and your loved ones.
+
+### In General
+1. Think several steps ahead before making any decision.
+2. Always calculate the essentials for your survival and your family's survival: HP status, available environmental resources, etc.
+3. Reflect on experiences, draw lessons, and pass those lessons on to those you care about.
+4. You will die upon reaching maximum age regardless of your HP, and all inventories and knowledge will be lost. ALWAYS check how many steps remain before you reach your maximum age, and allocate your time and resources wisely.
+5. Monitor hunting dynamics closely — who hunted with you, how rewards were actually allocated. If allocation was inappropriate, record it explicitly and develop a clear plan for how to respond. Even if you choose inaction, it should be a deliberate decision rather than an oversight.
